@@ -1,0 +1,165 @@
+                                 ===================================
+                                       FIXES FOR DUKE NUKEM 3D
+                                 ===================================
+                                  Version: 1.22 / September 2, 2019
+
+
+================================================================================================
+A B O U T
+================================================================================================
+
+This file provides widescreen graphics to make Duke Nukem 3D look a bit more polished and 
+visually "complete" for EDuke32 users.
+
+What you get:
+-------------
+> Fixed game.con
+  Darkus released an edited game.con file on Oct 3, 2016 which applies many improvements
+  and adjustments to the game, such as:
+     + Kill counter fix: Should now work as intended, works differently in 'Damn I'm Good', 
+                         skill settings also applied to some monsters (e.g. slimer eggs).
+     + Tons of code corrections, e.g. attacking shrunk enemies crouching monsters now have 
+       correct sizes, some animation tweaks, some cosmetic changes (green blood for eggs, 
+       rotating turrets actually rotating).
+     + Fixed shrinker: Large sprites can be shrunk now without issues.
+     + It is now possible to spawn any colored monster by using a paletted RESPAWN sprite.
+     + Multiplayer items in coop mode removed. 
+     + Changes for specific enemies:
+          - Bosses: Reduced rocket damage for mini-bosses, removed self-damage.
+          - Commander: Can respawn in 'Damn I'm Good', removed self-damage (can still hit 
+                       each other).
+          - Drone: Now checks if player can be seen before detonating. Also found that 
+                   the drone is supposed to play a beeping sound before exploding which 
+                   never happens due to malformed code. It is still disabled by default, 
+                   but you can try it by editing game.con - just search for the two 
+                   'state checkdronenearplayer' entries).
+          - Organtic Turret: Coded and works better, but still not perfect and lacks sounds.
+          - Pig Cops: when hit, shooting animation is not reset (was pretty annoying, 
+                      especially when you shoot them with a rapid fire weapon).
+          - Pig Cop Tank: Implemented more realistic physics for movements.
+          - Protector Drone: Reduced clipping distance which allows better moving in 
+                             narrow areas, also more aggressive underwater.
+                             Palette fixes: Has now green blood and correct color is restored 
+                             after being frozen. When unfrozen, Drone now has correct behavior
+                             (no more issues with changing direction).
+          - Protozoid Slimer: Floor shadows removed.
+          - Recon vehicle: Can now be created using RESPAWN sprite, thus fixing the "missing 
+                           monster" bug in E1L2. Also removed blood (vehicles are not 
+                           supposed to bleed).
+          - Slimer Eggs: Avoids resetting behavior after being frozen or shrunk, can also 
+                         be created using the respawn sprite.
+          - Trooper: Can be spawned with different colors using the RESPAWN sprite as intended 
+                     in stock maps
+          - Turret: Removed floor shadow for ceiling turrets (floor turrets still have).
+      + Changes for other sprites:
+          - FEM2 and FEM6 are now displaying the correct sprite after being killed.
+          - Sharks are now counting as enemy while the cannon (tile #1810) is not counted 
+            as enemy anymore.
+          - Some breakable sprites are 'active' at map start. This restores the behavior 
+            from v1.3D in E1L4 when barrels are moving on conveyor belts at map start 
+            (also in E4L9).
+  
+> Classic skyboxes
+  In Polymost rendering mode, parallax skies look pretty bad, showing large gray stripes 
+  on the top. With these skyboxes which stay close to the look of the original graphics, 
+  this problem should belong to the past.
+  Will also work with "Duke It Out in D.C." and "Duke Caribbean: Life's A Beach" [provided
+  you un-comment the appropriate lines in duke3d.def - just remove the "//" part of either
+  // skyboxes_dc.def (for "Duke D.C.") or
+  // skyboxes_vaca.def (for "Duke Caribbean").]
+  This will also work with Polymer, even though it's rather just a visual improvement 
+  (a nice one, though) than a fix in that case.
+
+> 8-bit redfont from Duke3D v1.3D
+  With the Atomic Edition, 3D Realms switched to a new menu font that was much thicker
+  than the one that came with the initial release of the game. Many liked the previous
+  font better, so here it is. I basically took the 8-bit version of the redfont from
+  the HRP and added it as a standalone (without its highres counterpart).
+
+> Widescreen statusbar
+  Fox made a really nice widescreen statusbar for the game. I improved a few pixels here
+  and there and increased its width a bit to cover higher screen resolutions.
+
+
+================================================================================================
+R E Q U I R E M E N T S
+================================================================================================
+
+- Duke Nukem 3D groupfile (preferrably v1.5 Atomic Edition)
+ 
+- EDuke32 (try to use a recent snapshot from: http://dukeworld.duke4.net/eduke32/ )
+
+
+================================================================================================
+I N S T A L L A T I O N
+================================================================================================
+
+1) Extract "duke3d_fix.zip" into your EDuke32 autoload dir.
+
+2) Launch EDuke32.
+
+
+================================================================================================
+N O T E S
+================================================================================================
+
+1) This patch is meant for users who prefer to play without the Highres Pack (HRP).
+   Using the HRP and this at the same time is redundant as you would have highres replacements 
+   for statusbar and menu font which make the graphics provided with this file useless.
+
+2) There seem to be issues with Darkus' GAME.CON fix and certain user maps such as 
+   underTaker's "Blink of an Eye" (maps ends right after being loaded). If you can't wait
+   for a fix, rename game.con in this pack to restore the original version.  
+
+
+================================================================================================
+C R E D I T S
+================================================================================================
+
+> RELEASE
+  NightFright (nightfright2k7[at]gmail.com)
+
+> GAME.CON CODE FIXES
+  Darkus
+
+> CLASSIC SKYBOXES / WIDESCREEN STATUSBAR
+  Fox
+
+> 8-BIT REDFONT FROM DUKE NUKEM 3D v1.3D
+  SwissCM
+
+> ORIGINAL GAME ART
+  (C) 3D Realms, 1996
+
+> MORE GOODIES
+  Duke Nukem 3D HRP ................................ http://hrp.duke4.net
+  EDuke32 .......................................... http://www.eduke32.com
+  Duke4.net Forums ................................. http://forums.duke4.net
+
+
+================================================================================================
+C H A N G E L O G
+================================================================================================
+
+v1.22 / 2019-09-02
+------------------
+- Removed: grabbag.mid
+- Updated: Game.con fixes from Apr 7, 2019 (by Darkus)
+
+v1.21 / 2016-11-04
+------------------
+- Updated: Game.con fixes (by Darkus)
+
+v1.2 / 2016-10-04
+-----------------
+- Added: Game.con fixes (by Darkus)
+- Added: Classic skyboxes (by Fox)
+
+v1.1 / 2015-09-16
+-----------------
+- Removed: Fox's CON fixes (addon is more mod-friendly this way)
+- Updated: Statusbar graphics (more seams removed)
+
+v1.0 / 2015-08-14
+-----------------
+- Initial release

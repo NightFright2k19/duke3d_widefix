@@ -1,0 +1,21 @@
+// Skyboxes for "Duke it out in D.C."
+
+skybox {
+   tile 3708 pal 0
+   top   "skyboxes/dukedc/3708_top.png" nocompress nodownsize
+   down  "skyboxes/dukedc/3708_bottom.png" nocompress nodownsize
+   front "skyboxes/dukedc/3708_north.png" nocompress nodownsize
+   right "skyboxes/dukedc/3708_north.png" nocompress nodownsize 
+   back  "skyboxes/dukedc/3708_north.png" nocompress nodownsize
+   left  "skyboxes/dukedc/3708_north.png" nocompress nodownsize 
+}
+
+skybox {
+   tile 3708 pal 1
+   top   "skyboxes/dukedc/3708_01_top.png" nocompress nodownsize
+   down  "skyboxes/dukedc/3708_01_bottom.png" nocompress nodownsize
+   front "skyboxes/dukedc/3708_01_north.png" nocompress nodownsize
+   right "skyboxes/dukedc/3708_01_north.png" nocompress nodownsize 
+   back  "skyboxes/dukedc/3708_01_north.png" nocompress nodownsize
+   left  "skyboxes/dukedc/3708_01_north.png" nocompress nodownsize 
+}

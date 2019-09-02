@@ -1,0 +1,21 @@
+// Skyboxes for "Duke Caribbean: Life's a Beach"
+
+skybox {
+   tile 89 pal 0
+   top   "skyboxes/vacation/0089_top.png" nocompress nodownsize
+   down  "skyboxes/vacation/0089_bottom.png" nocompress nodownsize
+   front "skyboxes/vacation/0089_north.png" nocompress nodownsize
+   right "skyboxes/vacation/0089_north.png" nocompress nodownsize 
+   back  "skyboxes/vacation/0089_north.png" nocompress nodownsize
+   left  "skyboxes/vacation/0089_north.png" nocompress nodownsize 
+}
+
+skybox {
+   tile 95 pal 0
+   top   "skyboxes/duke3d/0095_top.png" nocompress nodownsize
+   down  "skyboxes/vacation/0095_bottom.png" nocompress nodownsize
+   front "skyboxes/vacation/0095_north.png" nocompress nodownsize
+   right "skyboxes/vacation/0095_north.png" nocompress nodownsize 
+   back  "skyboxes/vacation/0095_north.png" nocompress nodownsize
+   left  "skyboxes/vacation/0095_north.png" nocompress nodownsize 
+}
