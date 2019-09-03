@@ -1,7 +1,7 @@
                                  ===================================
                                        FIXES FOR DUKE NUKEM 3D
                                  ===================================
-                                  Version: 1.22 / September 2, 2019
+                                  Version: 1.22 / September 3, 2019
 
 
 ================================================================================================
@@ -58,17 +58,6 @@ What you get:
           - Some breakable sprites are 'active' at map start. This restores the behavior 
             from v1.3D in E1L4 when barrels are moving on conveyor belts at map start 
             (also in E4L9).
-  
-> Classic skyboxes
-  In Polymost rendering mode, parallax skies look pretty bad, showing large gray stripes 
-  on the top. With these skyboxes which stay close to the look of the original graphics, 
-  this problem should belong to the past.
-  Will also work with "Duke It Out in D.C." and "Duke Caribbean: Life's A Beach" [provided
-  you un-comment the appropriate lines in duke3d.def - just remove the "//" part of either
-  // skyboxes_dc.def (for "Duke D.C.") or
-  // skyboxes_vaca.def (for "Duke Caribbean").]
-  This will also work with Polymer, even though it's rather just a visual improvement 
-  (a nice one, though) than a fix in that case.
 
 > 8-bit redfont from Duke3D v1.3D
   With the Atomic Edition, 3D Realms switched to a new menu font that was much thicker
@@ -87,7 +76,7 @@ R E Q U I R E M E N T S
 
 - Duke Nukem 3D groupfile (preferrably v1.5 Atomic Edition)
  
-- EDuke32 (try to use a recent snapshot from: http://dukeworld.duke4.net/eduke32/ )
+- EDuke32 (use a recent snapshot from: http://dukeworld.duke4.net/eduke32 )
 
 
 ================================================================================================
@@ -96,7 +85,9 @@ I N S T A L L A T I O N
 
 1) Extract "duke3d_fix.zip" into your EDuke32 autoload dir.
 
-2) Launch EDuke32.
+2) Make sure "Enable 'autoload' folder" option is checked in EDuke32 launcher. 
+
+3) Launch EDuke32.
 
 
 ================================================================================================
@@ -122,9 +113,6 @@ C R E D I T S
 > GAME.CON CODE FIXES
   Darkus
 
-> CLASSIC SKYBOXES / WIDESCREEN STATUSBAR
-  Fox
-
 > 8-BIT REDFONT FROM DUKE NUKEM 3D v1.3D
   SwissCM
 
@@ -141,8 +129,9 @@ C R E D I T S
 C H A N G E L O G
 ================================================================================================
 
-v1.22 / 2019-09-02
+v1.22 / 2019-09-03
 ------------------
+- Removed: Skyboxes (no longer needed with EDuke32 r8075 or later due to Polymost rendering fix)
 - Removed: grabbag.mid
 - Updated: Game.con fixes from Apr 7, 2019 (by Darkus)
 

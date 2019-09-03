@@ -1,13 +1,8 @@
 echo "Duke3D Fixes v1.22"
 
 // Duke3D 1.3D Redfont (by SwissCM)
-include redfont13/redfont13.def
-
-// Classic Skyboxes (by Fox)
-include skyboxes/skyboxes.def
-// include skyboxes/skyboxes_dc.def
-// include skyboxes/skyboxes_vaca.def
+include tiles/redfont13.def
 
 // Widescreen statusbar (by Fox)
-tilefromtexture 2462 { file "widescreen/2462_fox.png" }
+tilefromtexture 2462 { file "tiles/widescreen/2462_fox.png" }
 
