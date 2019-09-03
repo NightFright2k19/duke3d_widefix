@@ -1,4 +1,4 @@
-echo "Duke3D Fixes v1.21"
+echo "Duke3D Fixes v1.22"
 
 // Duke3D 1.3D Redfont (by SwissCM)
 include redfont13/redfont13.def
