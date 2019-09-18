@@ -4,5 +4,5 @@ echo "Duke3D Fixes v1.22"
 include tiles/redfont13.def
 
 // Widescreen statusbar (by Fox)
-tilefromtexture 2462 { file "tiles/widescreen/2462_fox.png" }
+tilefromtexture 2462 { file "tiles/widescreen/2462_fox.png" ifcrc 126028789 }
 
