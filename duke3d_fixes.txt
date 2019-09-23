@@ -1,7 +1,7 @@
                                  ===================================
                                        FIXES FOR DUKE NUKEM 3D
                                  ===================================
-                                  Version: 1.22 / September 3, 2019
+                                  Version: 1.3 / September 23, 2019
 
 
 ================================================================================================
@@ -65,9 +65,12 @@ What you get:
   font better, so here it is. I basically took the 8-bit version of the redfont from
   the HRP and added it as a standalone (without its highres counterpart).
 
-> Widescreen statusbar
+> Widescreen statusbar and weapons
   Fox made a really nice widescreen statusbar for the game. I improved a few pixels here
   and there and increased its width a bit to cover higher screen resolutions.
+  Widescreen-compatible weapons for Duke Nukem 3D (Pistol, Shrinker, Expander) and
+  Life's A Beach (Water Pistol, Super Soak'em, Triple Poison Shooter) made by Jimmy are also
+  included, only loaded when the same tiles are not replaced by custom mods. 
 
 
 ================================================================================================
@@ -116,6 +119,12 @@ C R E D I T S
 > 8-BIT REDFONT FROM DUKE NUKEM 3D v1.3D
   SwissCM
 
+> WIDESCREEN STATUSBAR
+  Fox
+
+> WIDESCREEN WEAPONS
+  Jimmy
+
 > ORIGINAL GAME ART
   (C) 3D Realms, 1996
 
@@ -128,6 +137,10 @@ C R E D I T S
 ================================================================================================
 C H A N G E L O G
 ================================================================================================
+
+v1.3 / 2019-09-23
+-----------------
+- Added: Widescreen weapons for Duke Nukem 3D and Life's A Beach (by Jimmy)
 
 v1.22 / 2019-09-03
 ------------------
