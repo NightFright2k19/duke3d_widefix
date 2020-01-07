@@ -145,7 +145,7 @@ actor SATELLITE TOUGH
   //  ifcount 120 move SHUTTLEVELS getv geth randomangle
 enda
 
-state jib_sounds
+defstate jib_sounds
   ifrnd SWEARFREQUENCY
   { randvar TEMPFIX1 16
     ifvare TEMPFIX1 0 globalsound JIBBED_ACTOR1
@@ -169,7 +169,7 @@ state jib_sounds
 ends
 
 
-state standard_jibs
+defstate standard_jibs
   guts JIBS2 1
   guts JIBS3 2
   guts JIBS4 3
@@ -184,7 +184,7 @@ state standard_jibs
   state jib_sounds
 ends
 
-state genericshrunkcode
+defstate genericshrunkcode
   ifcount 32
   {
     ifpdistl SQUISHABLEDISTANCE
@@ -197,7 +197,7 @@ state genericshrunkcode
   }
 ends
 
-state genericgrowcode
+defstate genericgrowcode
   ifcount 32
   {
     guts JIBS4 24
@@ -237,7 +237,7 @@ move SHARKVELS 24
 move SHARKFASTVELS 72
 move SHARKFLEEVELS 40
 
-state sharkfrozen
+defstate sharkfrozen
   ifp pfacing
     ifpdistl FROZENQUICKKICKDIST
       pkick
@@ -450,7 +450,7 @@ enda
 
 action BLIMPWAITTORESPAWN
 
-state blimphitstate
+defstate blimphitstate
   cstat 0
   spawn FIRSTGUNSPRITE
   spawn EXPLOSION2
@@ -496,7 +496,7 @@ enda
 
 
 
-state rats
+defstate rats
   ifrnd 128
     spawn RAT
   ifrnd 128
@@ -546,7 +546,7 @@ actor RUBBERCAN WEAK
   }
 enda
 
-state toughgalspeech
+defstate toughgalspeech
   ifnosounds
   { randvar TEMPFIX1 3
     ifvare TEMPFIX1 0 soundonce TOUGHGALSND1
@@ -556,13 +556,13 @@ state toughgalspeech
   }
 ends
 
-state jibfood
+defstate jibfood
   sound SQUISHED
   guts JIBS6 3
   killit
 ends
 
-state breakobject
+defstate breakobject
   ifaction 0
   {
     action ANULLACTION
@@ -1083,7 +1083,7 @@ useractor notenemy COFFEEMUG WEAK state breakobject enda
 
 
 
-state headhitstate
+defstate headhitstate
 
 // Unrem the following line to invoke screen tilting during
 // low player hitpoint damage.
@@ -1121,7 +1121,7 @@ enda
 action BURNING_FLAME  0   12   1   1   2
 move BURNING_VELS 
 
-state burningstate
+defstate burningstate
 
   sleeptime 300
 
@@ -1241,7 +1241,7 @@ actor WOODENHORSE WEAK WOODENHORSEFRAME
   }
 enda
 
-state steamcode
+defstate steamcode
   ifpdistl 6144
     soundonce STEAM_HISSING
 
@@ -1368,7 +1368,7 @@ actor NUKEBARRELLEAKED WEAK
   action BARREL_DENTED2
 enda
 
-state random_ooz
+defstate random_ooz
   ifrnd 128
     spawn OOZ2
   else
@@ -1421,7 +1421,7 @@ actor NUKEBARREL MEDIUMSTRENGTH
   }
 enda
 
-state burningbarrelcode
+defstate burningbarrelcode
   fall
   ifcount 32
   {
@@ -1621,7 +1621,7 @@ actor TRANSPORTERBEAM 0 BEAMFOWARD
     killit
 enda
 
-state getcode
+defstate getcode
   ifactor ATOMICHEALTH
     globalsound GETATOMICHEALTH
   else
@@ -1637,7 +1637,7 @@ state getcode
     killit
 ends
 
-state randgetweapsnds
+defstate randgetweapsnds
   randvar TEMPFIX1 4
     ifvare TEMPFIX1 0 globalsound DUKE_GETWEAPON1
   else
@@ -1650,7 +1650,7 @@ state randgetweapsnds
     globalsound DUKE_GETWEAPON6
 ends
 
-state getweaponcode
+defstate getweaponcode
 
   state randgetweapsnds
 
@@ -1668,7 +1668,7 @@ state getweaponcode
 ends
 
 
-state respawnit
+defstate respawnit
   ifcount RESPAWNITEMTIME
   {
     spawn TRANSPORTERSTAR
@@ -1678,7 +1678,7 @@ state respawnit
   }
 ends
 
-state quikget
+defstate quikget
   ifactor ATOMICHEALTH
     globalsound GETATOMICHEALTH
   else
@@ -1687,7 +1687,7 @@ state quikget
   killit
 ends
 
-state quikweaponget
+defstate quikweaponget
   state randgetweapsnds
   palfrom 32 0 32
   ifgotweaponce 1
@@ -2424,7 +2424,7 @@ enda
 action FIRE_FRAMES   -1 14 1 1 1
 move FIREVELS
 
-state firestate
+defstate firestate
 
   ifaction 0
     ifrnd 16
@@ -2514,7 +2514,7 @@ actor FECES
 enda
 
 // make random angle for the dropped items for HRP/Voxels
-state drop_ammo
+defstate drop_ammo
   ifrnd SPAWNAMMOODDS
   { espawn AMMO
     randvar TEMPFIX1 2047
@@ -2522,28 +2522,28 @@ state drop_ammo
   }
 ends
 
-state drop_battery
+defstate drop_battery
   ifrnd SPAWNAMMOODDS
   { espawn BATTERYAMMO
     randvar TEMPFIX1 2047
     setactor[RETURN].ang TEMPFIX1
   }
 ends
-state drop_sgshells
+defstate drop_sgshells
   ifrnd SPAWNAMMOODDS
   { espawn SHOTGUNAMMO
     randvar TEMPFIX1 2047
     setactor[RETURN].ang TEMPFIX1
   }
 ends
-state drop_shotgun
+defstate drop_shotgun
   ifrnd SPAWNAMMOODDS
   { espawn SHOTGUNSPRITE
     randvar TEMPFIX1 2047
     setactor[RETURN].ang TEMPFIX1
   }
 ends
-state drop_chaingun
+defstate drop_chaingun
   ifrnd SPAWNAMMOODDS
   {
     ifrnd 32
@@ -2560,7 +2560,7 @@ state drop_chaingun
 ends
 
 
-state random_wall_jibs
+defstate random_wall_jibs
   ifrnd 96
     shoot BLOODSPLAT1
   ifrnd 96
@@ -2588,7 +2588,7 @@ action FEMANIMATESLOW 0 2 1 1 100
 action TOUGHGALANIM   0 5 1 1 25
 action FEMANIMATE
 
-state femcode
+defstate femcode
 
   ifactor NAKED1 nullop
   else
@@ -2895,7 +2895,7 @@ state femcode
   }
 ends
 
-state killme
+defstate killme
   ifinwater nullop
   else
     ifp pfacing
@@ -2905,7 +2905,7 @@ state killme
             soundonce KILLME
 ends
 
-state tipme
+defstate tipme
   ifp pfacing
     ifpdistl 1280
       ifp palive
@@ -2923,7 +2923,7 @@ state tipme
   }
 ends
 
-state toughgaltalk
+defstate toughgaltalk
   ifp pfacing
     ifpdistl 1280
       ifp palive
@@ -3021,7 +3021,7 @@ enda
 
 
 
-state troop_body_jibs
+defstate troop_body_jibs
   ifrnd 64
     guts HEADJIB1 1
   ifrnd 64
@@ -3032,7 +3032,7 @@ state troop_body_jibs
     spawn BLOODPOOL
 ends
 
-state liz_body_jibs
+defstate liz_body_jibs
   ifrnd 64
     guts LIZMANHEAD1 1
   ifrnd 64
@@ -3062,7 +3062,7 @@ action EGGSHRUNKOPEN 2
 action EGGFROZENSHRUNK 0
 action EGGFROZENSHRUNKOPEN 2
 
-state eggfrozen
+defstate eggfrozen
   ifcount THAWTIME
   {
     ifaction EGGFROZENOPEN action EGGOPEN3
@@ -3103,7 +3103,7 @@ state eggfrozen
       pkick
 ends
 
-state eggshrunkstate
+defstate eggshrunkstate
   ifcount SHRUNKDONECOUNT
     { ifaction EGGSHRUNKOPEN action EGGOPEN3
       else action 0
@@ -3140,7 +3140,7 @@ actor EGG TOUGH
   else
     ifaction EGGOPEN2
       ifactioncount 4
-    { ifvarn userdef[THISACTOR].player_skill 4
+    { ifvarn userdef[].player_skill 4
       { getplayer[THISACTOR].max_actors_killed TEMPFIX1
         subvar TEMPFIX1 1
         setplayer[THISACTOR].max_actors_killed TEMPFIX1
@@ -3313,7 +3313,7 @@ actor SHOTSPARK1 PISTOL_WEAPON_STRENGTH WEAP2FRAMES
   }
 enda
 
-state standard_pjibs
+defstate standard_pjibs
   guts JIBS1 1
   guts JIBS3 2
   guts JIBS4 1
@@ -3326,7 +3326,7 @@ state standard_pjibs
 ends
 
 move DUKENOTMOVING
-state handle_dead_dukes
+defstate handle_dead_dukes
   fall
   ifmove 0   // 1st time initializiation...
   {
@@ -3391,7 +3391,7 @@ action PTREDWATER  395   2   5   1   17
 move PSTOPED
 move PSHRINKING // used as a var only
 
-state check_pstandard
+defstate check_pstandard
   ifp pwalking
     action PWALK
   else
@@ -4128,14 +4128,14 @@ actor ORGANTIC TURRETSTRENGTH AORGANTICCLOSED
   }
 enda
 
-state rf
+defstate rf
   ifrnd 128
     cstat 4
   else
     cstat 0
 ends
 
-state rf_unblock // Unblock the sprite, but don't change X flipping
+defstate rf_unblock // Unblock the sprite, but don't change X flipping
   ifvarand sprite[THISACTOR].cstat 4
     cstat 4
   else
@@ -4198,7 +4198,7 @@ ai AITROOPSHRUNK   ATROOPWALKING   SHRUNKVELS fleeenemy
 ai AITROOPHIDE     ATROOPABOUTHIDE TROOPSTOPPED faceplayer
 ai AITROOPGROW     ATROOPGROW    DONTGETUP faceplayerslow
 
-state troopgunnashoot
+defstate troopgunnashoot
   ifp palive
   {
     ifpdistl 1024
@@ -4240,7 +4240,7 @@ state troopgunnashoot
   }
 ends
 
-state troopseekstate
+defstate troopseekstate
   state troopgunnashoot
   ifinwater
   {
@@ -4301,7 +4301,7 @@ state troopseekstate
   }
 ends
 
-state troopduckstate
+defstate troopduckstate
   ifaction ATROOPDUCK
   {
     ifactioncount 8
@@ -4349,7 +4349,7 @@ state troopduckstate
   }
 ends
 
-state troopshootstate
+defstate troopshootstate
   ifactioncount 2
   {
     ifcanshoottarget
@@ -4378,7 +4378,7 @@ state troopshootstate
   }
 ends
 
-state troopfleestate
+defstate troopfleestate
   ifactioncount 7
   {
     ifpdistg 3084
@@ -4417,7 +4417,7 @@ state troopfleestate
   }
 ends
 
-state troopdying
+defstate troopdying
   iffloordistl 32
   {
     ifactioncount 5
@@ -4441,7 +4441,7 @@ state troopdying
   }
 ends
 
-state checktroophit
+defstate checktroophit
   ifaction ATROOPSUFFERING
   {
     stopsound LIZARD_BEG
@@ -4564,7 +4564,7 @@ state checktroophit
   }
 ends
 
-state troopjetpackstate
+defstate troopjetpackstate
   ifaction ATROOPJETPACKILL
   {
     ifcansee
@@ -4605,7 +4605,7 @@ state troopjetpackstate
   }
 ends
 
-state troophidestate
+defstate troophidestate
   ifaction ATROOPREAPPEAR
   {
     ifactioncount 2
@@ -4680,7 +4680,7 @@ state troophidestate
     }
 ends
 
-state checksquished
+defstate checksquished
   ifsquished
   {
 //    addkills 1
@@ -4691,7 +4691,7 @@ state checksquished
   }
 ends
 
-state troopsufferingstate
+defstate troopsufferingstate
   ifactioncount 2
   {
     ifrnd 16
@@ -4707,7 +4707,7 @@ state troopsufferingstate
   }
 ends
 
-state troopshrunkstate
+defstate troopshrunkstate
   ifcount SHRUNKDONECOUNT
     { ai AITROOPSEEKENEMY
       sizeat 40 40 }
@@ -4718,7 +4718,7 @@ state troopshrunkstate
     state genericshrunkcode
 ends
 
-state troopfrozen
+defstate troopfrozen
   ifcount THAWTIME
   {
     ifaction ATROOPSHRUNKFROZEN
@@ -4759,7 +4759,7 @@ state troopfrozen
         pkick
 ends
 
-state troopcode fall
+defstate troopcode fall
   ifinwater
     ifrnd 1
       spawn WATERBUBBLE
@@ -4829,7 +4829,7 @@ state troopcode fall
       strength TROOPSTRENGTH
       setvar ISDEADFIX 0
       ai AITROOPSEEKENEMY
-      ifvarn userdef[THISACTOR].player_skill 4
+      ifvarn userdef[].player_skill 4
         subvar KILLCOUNTFIX 1
     }
     ifhitweapon
@@ -5021,7 +5021,7 @@ ai AILIZGROW ALIZGROW  LIZSTOP faceplayerslow
 ai AILIZSPIT ALIZSCREAM LIZSTOP faceplayerslow
 ai AILIZDYING ALIZDYING LIZSTOP geth
 
-state lizseekstate
+defstate lizseekstate
 
   ifactornotstayput
   {
@@ -5120,7 +5120,7 @@ state lizseekstate
 
 ends
 
-state lizshrunkstate
+defstate lizshrunkstate
   ifcount SHRUNKDONECOUNT
     { sizeat 40 40 ai AILIZGETENEMY }
   else
@@ -5130,7 +5130,7 @@ state lizshrunkstate
     state genericshrunkcode
 ends
 
-state lizfleestate
+defstate lizfleestate
   ifcount 16
   {
     ifrnd 48
@@ -5147,7 +5147,7 @@ state lizfleestate
   }
 ends
 
-state lizthinkstate
+defstate lizthinkstate
   ifrnd 8
     soundonce CAPT_ROAM
   ifactioncount 3
@@ -5180,7 +5180,7 @@ state lizthinkstate
   }
 ends
 
-state lizshootstate
+defstate lizshootstate
   ifcount 20
     ifrnd 8
   {
@@ -5214,7 +5214,7 @@ state lizshootstate
   }
 ends
 
-state checklizhit
+defstate checklizhit
   ifdead
   {
     ifwasweapon FREEZEBLAST
@@ -5300,7 +5300,7 @@ state checklizhit
   }
 ends
 
-state lizfrozen
+defstate lizfrozen
   ifcount THAWTIME
   { ifaction ALIZFROZENSHRUNK
     { ai AILIZSHRUNK
@@ -5341,7 +5341,7 @@ state lizfrozen
         pkick
 ends
 
-state lizjumpstate
+defstate lizjumpstate
   ifaction ALIZFALL
   {
     iffloordistl 16
@@ -5352,7 +5352,7 @@ state lizjumpstate
       action ALIZFALL
 ends
 
-state lizdyingstate
+defstate lizdyingstate
   ifaction ALIZLYINGDEAD
   {
     strength 0
@@ -5372,7 +5372,7 @@ state lizdyingstate
       strength LIZSTRENGTH
       setvar ISDEADFIX 0
       ai AILIZGETENEMY
-      ifvarn userdef[THISACTOR].player_skill 4
+      ifvarn userdef[].player_skill 4
         subvar KILLCOUNTFIX 1
     }
   }
@@ -5389,12 +5389,12 @@ state lizdyingstate
   }
 ends
 
-state lizdodgestate
+defstate lizdodgestate
   ifcount 13
     ai AILIZGETENEMY
 ends
 
-state lizcode
+defstate lizcode
   state checksquished
 
   ifai 0
@@ -5471,8 +5471,8 @@ ends
 actor LIZMANSTAYPUT LIZSTRENGTH ALIZSTAYSTAND ai AILIZGETENEMY cactor LIZMAN enda
 
 actor LIZMANSPITTING LIZSTRENGTH ALIZSTAND
-fall
-state lizcode
+  fall
+  state lizcode
 enda
 
 actor LIZMANJUMP LIZSTRENGTH ALIZJUMPSTAND ai AILIZJUMPENEMY cactor LIZMAN enda
@@ -5506,7 +5506,7 @@ ai AIDRONEHIT DRONESCREAM DRONEBACKWARDS faceplayer
 ai AIDRONEDODGE DRONEFRAMES DRONEBULLVELS dodgebullet geth
 ai AIDRONEDODGEUP DRONEFRAMES DRONERISE getv geth
 
-state dronedead
+defstate dronedead
   debris SCRAP1 8
   debris SCRAP2 4
   debris SCRAP3 7
@@ -5516,7 +5516,7 @@ state dronedead
   killit
 ends
 
-state checkdronehitstate
+defstate checkdronehitstate
 
   ifdead state dronedead
   else
@@ -5536,7 +5536,7 @@ state checkdronehitstate
 ends
 
 /*
-state droneshrunkstate
+defstate droneshrunkstate
   ifcount 24
     killit
   else
@@ -5546,7 +5546,7 @@ ends
 
 // Instant explosion
 
-state checkdronenearplayer
+defstate checkdronenearplayer
   ifp palive
     ifpdistl 1596
       ifcansee
@@ -5565,7 +5565,7 @@ ends
 // Original delayed explosion
 
 /*
-state checkdronenearplayer
+defstate checkdronenearplayer
   ifp palive
     ifpdistl 1596
       ifcansee
@@ -5574,7 +5574,7 @@ state checkdronenearplayer
 ends
 */
 
-state dronegetstate
+defstate dronegetstate
   ifrnd 192
   {
     ifcansee
@@ -5608,7 +5608,7 @@ state dronegetstate
   }
 ends
 
-state dronedodgestate
+defstate dronedodgestate
   ifai AIDRONEDODGEUP
   {
      ifcount 8
@@ -5736,7 +5736,7 @@ ai AIOCTASHRUNK AOCTAWALK SHRUNKVELS fleeenemy
 ai AIOCTAGROW AOCTAGROW OCTASTOPPED faceplayerslow
 ai AIOCTADYING AOCTADYING OCTASTOPPED geth
 
-state octagetenemystate
+defstate octagetenemystate
   ifcansee
     ifp palive
     {
@@ -5757,7 +5757,7 @@ state octagetenemystate
 
 ends
 
-state octascratchenemystate
+defstate octascratchenemystate
   ifpdistg 1280
     ai AIOCTAGETENEMY
   ifp pdead
@@ -5783,7 +5783,7 @@ state octascratchenemystate
   }
 ends
 
-state octashootenemystate
+defstate octashootenemystate
   ifcount 25
   {
     ifcount 27
@@ -5800,7 +5800,7 @@ state octashootenemystate
       resetactioncount
 ends
 
-state checkoctahitstate
+defstate checkoctahitstate
     ifdead
     {
       ifwasweapon FREEZEBLAST
@@ -5876,7 +5876,7 @@ state checkoctahitstate
   state random_wall_jibs
 ends
 
-state octashrunkstate
+defstate octashrunkstate
   ifcount SHRUNKDONECOUNT
     { sizeat 40 40 ai AIOCTAGETENEMY }
   else
@@ -5886,7 +5886,7 @@ state octashrunkstate
     state genericshrunkcode
 ends
 
-state octafrozen
+defstate octafrozen
   ifcount THAWTIME
   { ifaction AOCTAFROZENSHRUNK
     { ai AIOCTASHRUNK
@@ -5925,7 +5925,7 @@ state octafrozen
         pkick
 ends
 
-state octadyingstate
+defstate octadyingstate
   ifactioncount 8
   {
     ifrnd 64
@@ -5966,7 +5966,7 @@ actor OCTABRAIN OCTASTRENGTH AOCTASTAND
       strength OCTASTRENGTH
       setvar ISDEADFIX 0
       ai AIOCTAGETENEMY
-      ifvarn userdef[THISACTOR].player_skill 4
+      ifvarn userdef[].player_skill 4
         subvar KILLCOUNTFIX 1
     }
     ifhitweapon
@@ -6071,7 +6071,7 @@ ai AIPIGSHRINK APIGWALK SHRUNKVELS fleeenemy
 ai AIPIGGROW APIGGROW PIGSTOPPED faceplayerslow
 ai AIPIGHIT APIGHIT PIGSTOPPED faceplayer
 
-state pigseekenemystate
+defstate pigseekenemystate
 
   ifai AIPIGCHARGE
   {
@@ -6135,7 +6135,7 @@ state pigseekenemystate
 ends
 
 
-state pigshootenemystate
+defstate pigshootenemystate
 //  ifcansee
 //  {
     ifcount 12 nullop
@@ -6204,7 +6204,7 @@ state pigshootenemystate
 //    ai AIPIGSEEKENEMY
 ends
 
-state pigfleeenemystate
+defstate pigfleeenemystate
   ifactioncount 8
     ai AIPIGSEEKENEMY
   else
@@ -6212,7 +6212,7 @@ state pigfleeenemystate
       ai AIPIGSEEKENEMY
 ends
 
-state pigdivestate
+defstate pigdivestate
   ifcansee { } // needed to update the 'last seen' position
   ifaction APIGDIVESHOOT
   {
@@ -6299,7 +6299,7 @@ state pigdivestate
   }
 ends
 
-state checkpighitstate
+defstate checkpighitstate
   ifdead
   {
     state random_wall_jibs
@@ -6402,7 +6402,7 @@ state checkpighitstate
   }
 ends
 
-state pigshrinkstate
+defstate pigshrinkstate
   ifcount SHRUNKDONECOUNT
     { sizeat 40 40 ai AIPIGSEEKENEMY }
   else
@@ -6412,7 +6412,7 @@ state pigshrinkstate
     state genericshrunkcode
 ends
 
-state pigfrozen
+defstate pigfrozen
   ifcount THAWTIME
   { ifaction APIGFROZENSHRUNK
     { ai AIPIGSHRINK
@@ -6452,7 +6452,7 @@ state pigfrozen
         pkick
 ends
 
-state pigdyingstate
+defstate pigdyingstate
   ifactioncount 5
   {
     ifrnd 64
@@ -6466,7 +6466,7 @@ state pigdyingstate
   }
 ends
 
-state pigcopcode
+defstate pigcopcode
   state checksquished
   ifaction APIGSTAND
     ai AIPIGSEEKENEMY
@@ -6482,7 +6482,7 @@ state pigcopcode
       strength PIGCOPSTRENGTH
       setvar ISDEADFIX 0
       ai AIPIGSEEKENEMY
-      ifvarn userdef[THISACTOR].player_skill 4
+      ifvarn userdef[].player_skill 4
         subvar KILLCOUNTFIX 1
     }
     else
@@ -6602,7 +6602,7 @@ ai AIBOSS1LOBBED ABOSS1LOB BOSS1STOPPED faceplayer // faceplayersmart
 ai AIBOSS1DYING ABOSS1DYING BOSS1STOPPED geth
 ai AIBOSS1PALSHRINK ABOSS1WALK PALBOSS1SHRUNKRUNVELS furthestdir
 
-state boss1palshrunkstate
+defstate boss1palshrunkstate
   ifcount SHRUNKDONECOUNT
     { sizeat 40 40 ai AIBOSS1SEEKENEMY }
   else
@@ -6612,14 +6612,14 @@ state boss1palshrunkstate
     state genericshrunkcode
 ends
 
-state checkboss1seekstate
+defstate checkboss1seekstate
   ai AIBOSS1SEEKENEMY
   ifspritepal 0 nullop
     else   // a fake way of doing a ifspritepal NOT.
       move PALBOSS1RUNVELS seekplayer
 ends
 
-state boss1runenemystate
+defstate boss1runenemystate
   ifpdistl 2048
   {
     ifp palive
@@ -6644,7 +6644,7 @@ state boss1runenemystate
     ai AIBOSS1SEEKENEMY
 ends
 
-state boss1seekenemystate
+defstate boss1seekenemystate
   ifrnd 2
     soundonce BOS1_ROAM
   else
@@ -6690,7 +6690,7 @@ state boss1seekenemystate
 
 ends
 
-state boss1dyingstate
+defstate boss1dyingstate
   ifaction ABOSS1DEAD
   {
     ifspritepal 0
@@ -6704,7 +6704,7 @@ state boss1dyingstate
       strength PIGCOPSTRENGTH
       setvar ISDEADFIX 0
       state checkboss1seekstate
-      ifvarn userdef[THISACTOR].player_skill 4
+      ifvarn userdef[].player_skill 4
         subvar KILLCOUNTFIX 1
     }
     else
@@ -6738,7 +6738,7 @@ state boss1dyingstate
   }
 ends
 
-state boss1lobbedstate
+defstate boss1lobbedstate
   ifcansee
   {
     ifactioncount 2
@@ -6756,7 +6756,7 @@ state boss1lobbedstate
     state checkboss1seekstate
 ends
 
-state boss1shootenemy
+defstate boss1shootenemy
   ifcount 72
     state checkboss1seekstate
   else
@@ -6774,7 +6774,7 @@ state boss1shootenemy
   }
 ends
 
-state checkboss1hitstate
+defstate checkboss1hitstate
   ifrnd 2
     spawn BLOODPOOL
   ifdead
@@ -6829,7 +6829,7 @@ state checkboss1hitstate
   }
 ends
 
-state boss1frozen
+defstate boss1frozen
   ifcount THAWTIME
   {
     getlastpal
@@ -6872,7 +6872,7 @@ state boss1frozen
         pkick
 ends
 
-state boss1code
+defstate boss1code
 
   ifaction ABOSS1FROZEN
   { state boss1frozen
@@ -6956,7 +6956,7 @@ ai AIBOSS2LOBBED ABOSS2LOB BOSS2STOPPED faceplayer
 ai AIBOSS2DYING ABOSS2DYING BOSS2STOPPED geth
 ai AIBOSS2PALSHRINK ABOSS2WALK PALBOSS2SHRUNKRUNVELS furthestdir
 
-state boss2palshrunkstate
+defstate boss2palshrunkstate
   ifcount SHRUNKDONECOUNT
     { sizeat 40 40 ai AIBOSS2SEEKENEMY }
   else
@@ -6966,14 +6966,14 @@ state boss2palshrunkstate
     state genericshrunkcode
 ends
 
-state checkboss2seekstate
+defstate checkboss2seekstate
   ai AIBOSS2SEEKENEMY
   ifspritepal 0 nullop
   else   // a fake way of doing a ifspritepal NOT.
     move PALBOSS2RUNVELS seekplayer
 ends
 
-state boss2runenemystate
+defstate boss2runenemystate
   ifcansee
   {
     ifactioncount 3
@@ -7001,7 +7001,7 @@ state boss2runenemystate
     ai AIBOSS2SEEKENEMY
 ends
 
-state boss2seekenemystate
+defstate boss2seekenemystate
   ifrnd 2
     soundonce BOS2_ROAM
   else
@@ -7043,7 +7043,7 @@ state boss2seekenemystate
   }
 ends
 
-state boss2dyingstate
+defstate boss2dyingstate
   ifaction ABOSS2DEAD
   {
     ifspritepal 0
@@ -7057,7 +7057,7 @@ state boss2dyingstate
       strength PIGCOPSTRENGTH
       setvar ISDEADFIX 0
       state checkboss2seekstate
-      ifvarn userdef[THISACTOR].player_skill 4
+      ifvarn userdef[].player_skill 4
         subvar KILLCOUNTFIX 1
     }
     else
@@ -7092,7 +7092,7 @@ state boss2dyingstate
   }
 ends
 
-state boss2lobbedstate
+defstate boss2lobbedstate
   ifcansee
   {
     ifactioncount 2
@@ -7115,7 +7115,7 @@ state boss2lobbedstate
     state checkboss2seekstate
 ends
 
-state boss2shootenemy
+defstate boss2shootenemy
   ifcount 72
     state checkboss2seekstate
   else
@@ -7127,7 +7127,7 @@ state boss2shootenemy
   }
 ends
 
-state checkboss2hitstate
+defstate checkboss2hitstate
   ifrnd 2
     spawn BLOODPOOL
   ifdead
@@ -7193,7 +7193,7 @@ state checkboss2hitstate
   }
 ends
 
-state boss2frozen
+defstate boss2frozen
   ifcount THAWTIME
   {
     getlastpal
@@ -7235,7 +7235,7 @@ state boss2frozen
         pkick
 ends
 
-state boss2code
+defstate boss2code
 
   ifaction ABOSS2FROZEN
   { state boss2frozen
@@ -7327,7 +7327,7 @@ ai AIBOSS3LOBENEMY ABOSS3LOB BOSS3STOPPED faceplayer
 ai AIBOSS3DYING ABOSS3DYING BOSS3STOPPED geth
 ai AIBOSS3PALSHRINK ABOSS3WALK PALBOSS3SHRUNKRUNVELS fleeenemy
 
-state boss3palshrunkstate
+defstate boss3palshrunkstate
   ifcount SHRUNKDONECOUNT
     { sizeat 40 40 ai AIBOSS3SEEKENEMY }
   else
@@ -7337,14 +7337,14 @@ state boss3palshrunkstate
     state genericshrunkcode
 ends
 
-state checkboss3seekstate
+defstate checkboss3seekstate
   ai AIBOSS3SEEKENEMY
   ifspritepal 0 nullop
   else   // a fake way of doing a ifspritepal NOT.
     move PALBOSS3RUNVELS seekplayer
 ends
 
-state boss3runenemystate
+defstate boss3runenemystate
   ifcansee
   {
     ifactioncount 3
@@ -7362,7 +7362,7 @@ state boss3runenemystate
     ai AIBOSS3SEEKENEMY
 ends
 
-state boss3seekenemystate
+defstate boss3seekenemystate
   ifrnd 2
     soundonce BOS3_ROAM
   else
@@ -7392,7 +7392,7 @@ state boss3seekenemystate
   }
 ends
 
-state boss3dyingstate
+defstate boss3dyingstate
   ifaction ABOSS3DEAD
   {
     ifspritepal 0
@@ -7405,7 +7405,7 @@ state boss3dyingstate
       strength PIGCOPSTRENGTH
       setvar ISDEADFIX 0
       state checkboss3seekstate
-      ifvarn userdef[THISACTOR].player_skill 4
+      ifvarn userdef[].player_skill 4
         subvar KILLCOUNTFIX 1
     }
     else
@@ -7439,7 +7439,7 @@ state boss3dyingstate
   }
 ends
 
-state boss3lobbedstate
+defstate boss3lobbedstate
   ifcansee
   {
     ifaction ABOSS3LOBBING
@@ -7461,7 +7461,7 @@ state boss3lobbedstate
     state checkboss3seekstate
 ends
 
-state checkboss3hitstate
+defstate checkboss3hitstate
   ifrnd 2
     spawn BLOODPOOL
   ifdead
@@ -7519,7 +7519,7 @@ state checkboss3hitstate
   }
 ends
 
-state boss3frozen
+defstate boss3frozen
   ifcount THAWTIME
   {
     getlastpal
@@ -7564,7 +7564,7 @@ state boss3frozen
         pkick
 ends
 
-state boss3code
+defstate boss3code
 
   ifaction ABOSS3FROZEN
   { state boss3frozen
@@ -7657,7 +7657,7 @@ ai AICOMMDYING ACOMMDYING COMMSTOPPED geth
 ai AICOMMSHRUNK ACOMMGET COMMSLOW furthestdir
 ai AICOMMGROW ACOMMGROW COMMSTOPPED furthestdir
 
-state checkcommhitstate
+defstate checkcommhitstate
 
   ifhitweapon
   {
@@ -7725,7 +7725,7 @@ state checkcommhitstate
   }
 ends
 
-state commfrozen
+defstate commfrozen
   fall
 
   ifcount THAWTIME
@@ -7941,7 +7941,7 @@ actor COMMANDER COMMANDERSTRENGTH ACOMMSTAND
         strength COMMANDERSTRENGTH
         setvar ISDEADFIX 0
         ai AICOMMGET
-        ifvarn userdef[THISACTOR].player_skill 4
+        ifvarn userdef[].player_skill 4
           subvar KILLCOUNTFIX 1
       }
     }
@@ -8355,7 +8355,7 @@ else
       ifvarg sprite[THISACTOR].pal 0
       setactor[RETURN].pal sprite[THISACTOR].pal
       setvar ISDEADFIX 1
-      ifvarn userdef[THISACTOR].player_skill 4
+      ifvarn userdef[].player_skill 4
       { getplayer[THISACTOR].max_actors_killed TEMPFIX1
         subvar TEMPFIX1 1
         setplayer[THISACTOR].max_actors_killed TEMPFIX1
@@ -8423,7 +8423,7 @@ ai AIBOSS4LAYEGGS ABOSS4WALK BOSS4WALKVELS randomangle geth
 ai AIBOSS4SHOOT ABOSS4ABOUTTOSHOOT BOSS4STOPPED faceplayer
 ai AIBOSS4DYING ABOSS4DYING BOSS4STOPPED geth
 
-state boss4shootstate
+defstate boss4shootstate
   ifaction ABOSS4ABOUTTOSHOOT
     ifactioncount 3
       action ABOSS4SHOOT
@@ -8459,7 +8459,7 @@ state boss4shootstate
 
 ends
 
-state boss4layeggs
+defstate boss4layeggs
   ifrnd 2
     sound BOS4_ROAM
 
@@ -8496,7 +8496,7 @@ state boss4layeggs
 
 ends
 
-state boss4dyingstate
+defstate boss4dyingstate
   ifaction ABOSS4DEAD
     break
   else
@@ -8511,7 +8511,7 @@ state boss4dyingstate
   }
 ends
 
-state checkboss4hitstate
+defstate checkboss4hitstate
   ifrnd 2
     spawn BLOODPOOL
 
@@ -8547,7 +8547,7 @@ state checkboss4hitstate
   }
 ends
 
-state boss4code
+defstate boss4code
 
   ifai 0
     ai AIBOSS4LAYEGGS
@@ -8670,7 +8670,7 @@ ai AINEWBEASTDYING ANEWBEASTDYING NEWBEASTSTOP geth
 ai AINEWBEASTSHOOT ANEWBEASTSCREAM NEWBEASTSTOP faceplayerslow
 ai AINEWBEASTFLINTCH ANEWBEASTFLINTCH NEWBEASTSTOP faceplayerslow
 
-state checknewbeastsquished
+defstate checknewbeastsquished
   ifsquished
   {
     sound SQUISHED
@@ -8686,7 +8686,7 @@ state checknewbeastsquished
   }
 ends
 
-state newbeastseekstate
+defstate newbeastseekstate
 
   ifactornotstayput
   {
@@ -8779,7 +8779,7 @@ state newbeastseekstate
 ends
 
 /*
-state newbeastshrunkstate
+defstate newbeastshrunkstate
   ifcount SHRUNKDONECOUNT
     { sizeat 40 40 ai AINEWBEASTGETENEMY }
   else
@@ -8790,7 +8790,7 @@ state newbeastshrunkstate
 ends
 */
 
-state newbeastfleestate
+defstate newbeastfleestate
   ifcount 8
   {
     ifrnd 64
@@ -8812,7 +8812,7 @@ state newbeastfleestate
   }
 ends
 
-state newbeastthinkstate
+defstate newbeastthinkstate
 
   ifrnd 8
     soundonce NEWBEAST_ROAM
@@ -8848,7 +8848,7 @@ state newbeastthinkstate
   }
 ends
 
-state newbeastscratchstate
+defstate newbeastscratchstate
   ifcount 20
     ifrnd 8
   {
@@ -8905,7 +8905,7 @@ state newbeastscratchstate
   }
 ends
 
-state checknewbeasthit
+defstate checknewbeasthit
 //  The alien is immune to the shrinker
 //    ifwasweapon SHRINKSPARK
 //    {
@@ -8988,7 +8988,7 @@ state checknewbeasthit
   }
 ends
 
-state newbeastjumpstate
+defstate newbeastjumpstate
   ifaction ANEWBEASTFALL
   {
     ifpdistl 1596
@@ -9007,7 +9007,7 @@ state newbeastjumpstate
       action ANEWBEASTFALL
 ends
 
-state newbeastdyingstate
+defstate newbeastdyingstate
   ifaction ANEWBEASTLYINGDEAD
   {
     strength 0
@@ -9027,7 +9027,7 @@ state newbeastdyingstate
       strength NEWBEASTSTRENGTH
       setvar ISDEADFIX 0
       ai AINEWBEASTGETENEMY
-      ifvarn userdef[THISACTOR].player_skill 4
+      ifvarn userdef[].player_skill 4
         subvar KILLCOUNTFIX 1
     }
   }
@@ -9044,7 +9044,7 @@ state newbeastdyingstate
   }
 ends
 
-state newbeastdodgestate
+defstate newbeastdodgestate
   ifcount 13
     ai AINEWBEASTGETENEMY
 ends
@@ -9052,7 +9052,7 @@ ends
 useractor enemystayput NEWBEASTSTAYPUT NEWBEASTSTRENGTH ANEWBEASTSTAYSTAND ai AINEWBEASTGETENEMY cactor NEWBEAST enda
 useractor enemy NEWBEASTJUMP NEWBEASTSTRENGTH ANEWBEASTJUMPSTAND ai AINEWBEASTJUMPENEMY cactor NEWBEAST enda
 
-state newbeastcode
+defstate newbeastcode
   state checknewbeastsquished
   ifai 0
     ai AINEWBEASTGETENEMY
@@ -9195,10 +9195,10 @@ onevent EVENT_SPAWN
     break
     case EGG
     case SHARK // Count egg and shark as enemies and apply skill settings for eggs
-      ifvarvarg sprite[THISACTOR].lotag userdef[THISACTOR].player_skill
+      ifvarvarg sprite[THISACTOR].lotag userdef[].player_skill
       { setvar ISDEADFIX 1 killit }
       else 
-      ifvarn userdef[THISACTOR].player_skill 4
+      ifvarn userdef[].player_skill 4
       { getplayer[THISACTOR].max_actors_killed TEMPFIX1
         addvar TEMPFIX1 1
         setplayer[THISACTOR].max_actors_killed TEMPFIX1
@@ -9402,13 +9402,18 @@ onevent EVENT_LOADACTOR
   case NEWBEASTSTAYPUT
   case NEWBEASTHANG
   case NEWBEASTJUMP
+  case BOSS4
+    ifvarvarg sprite[THISACTOR].lotag userdef[].player_skill
+    { setvar ISDEADFIX 1 killit }
+  break
   case BOSS1
   case BOSS1STAYPUT
   case BOSS2
   case BOSS3
-  case BOSS4
-    ifvarvarg sprite[THISACTOR].lotag userdef[THISACTOR].player_skill
-    { setvar ISDEADFIX 1 killit }
+    ifvarvarg sprite[THISACTOR].lotag userdef[].player_skill
+    { ifspritepal 0 spritepal 21 // Because EVENT_KILLIT is not reliable with complex events,
+      setvar ISDEADFIX 1 killit  // this should suffice.
+    }
   break
   case FIRSTGUNSPRITE // Remove multiplayer items in COOP mode
   case SHOTGUNSPRITE
@@ -9495,7 +9500,7 @@ onevent EVENT_EGS
   case PIGCOP // Don't add a kill if a pig cop is spawned from recon vehicle
     ifspawnedby RECON
     { subvar KILLCOUNTFIX 1
-      ifvarn userdef[THISACTOR].player_skill 4
+      ifvarn userdef[].player_skill 4
       { getplayer[THISACTOR].max_actors_killed TEMPFIX1
         subvar TEMPFIX1 1
         setplayer[THISACTOR].max_actors_killed TEMPFIX1
@@ -9696,7 +9701,11 @@ onevent EVENT_KILLIT
     ifvare ISDEADFIX 0
       addvar KILLCOUNTFIX 1
     ifspritepal 0  // end the game if is a boss
-      endofgame 52
+    { ifvarvarg sprite[THISACTOR].lotag userdef[].player_skill // Don't start ending when skill-lotag don't match
+        nullop
+      else
+        endofgame 52
+    }
   break
   case BOSS4
     ifvare ISDEADFIX 0
