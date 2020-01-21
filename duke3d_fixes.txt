@@ -59,13 +59,22 @@ What you get:
             from v1.3D in E1L4 when barrels are moving on conveyor belts at map start 
             (also in E4L9).
 
+> Classic skyboxes (DukeGDX only)
+  In Polymost rendering mode, parallax skies look pretty bad, showing large gray stripes 
+  on the top. With these skyboxes which stay close to the look of the original graphics, 
+  this problem should belong to the past.
+  Will also work with "Duke It Out in D.C." and "Duke Caribbean: Life's A Beach" [provided
+  you un-comment the appropriate lines in duke3d.def - just remove the "//" part of either
+  // skyboxes_dc.def (for "Duke D.C.") or
+  // skyboxes_vaca.def (for "Duke Caribbean").]
+
 > 8-bit redfont from Duke3D v1.3D
   With the Atomic Edition, 3D Realms switched to a new menu font that was much thicker
   than the one that came with the initial release of the game. Many liked the previous
   font better, so here it is. I basically took the 8-bit version of the redfont from
   the HRP and added it as a standalone (without its highres counterpart).
 
-> Widescreen statusbar and weapons
+> Widescreen statusbar (EDuke32 + DukeGDX) and weapons (EDuke32 only)
   Fox made a really nice widescreen statusbar for the game. I improved a few pixels here
   and there and increased its width a bit to cover higher screen resolutions.
   Widescreen-compatible weapons for Duke Nukem 3D (Pistol, Shrinker, Expander) and
@@ -119,7 +128,7 @@ C R E D I T S
 > 8-BIT REDFONT FROM DUKE NUKEM 3D v1.3D
   SwissCM
 
-> WIDESCREEN STATUSBAR
+> CLASSIC SKYBOXES + WIDESCREEN STATUSBAR
   Fox
 
 > WIDESCREEN WEAPONS
@@ -141,6 +150,7 @@ C H A N G E L O G
 v1.32 / 2020-01-21
 ------------------
 - Added: dukegdx.def (for DukeGDX compatibility; widescreen.def not loaded since it is not needed)
+- Added: Skyboxes from v1.21 for Duke3D, DukeDC and Vacation (DukeGDX only)
 - Updated: 2943, 2962 ("D" and "W" chars were distorted in DukeGDX)
 
 v1.31 / 2020-01-07
