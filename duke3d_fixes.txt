@@ -74,7 +74,7 @@ What you get:
   font better, so here it is. I basically took the 8-bit version of the redfont from
   the HRP and added it as a standalone (without its highres counterpart).
 
-> Widescreen statusbar (EDuke32 + DukeGDX) and weapons (EDuke32 only)
+> Widescreen statusbar and weapons (EDuke32 only)
   Fox made a really nice widescreen statusbar for the game. I improved a few pixels here
   and there and increased its width a bit to cover higher screen resolutions.
   Widescreen-compatible weapons for Duke Nukem 3D (Pistol, Shrinker, Expander) and
