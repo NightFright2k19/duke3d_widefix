@@ -1,7 +1,7 @@
                                  ===================================
                                        FIXES FOR DUKE NUKEM 3D
                                  ===================================
-                                  Version: 1.32 / January 20, 2020
+                                  Version: 1.32 / January 21, 2020
 
 
 ================================================================================================
@@ -138,9 +138,10 @@ C R E D I T S
 C H A N G E L O G
 ================================================================================================
 
-v1.32 / 2020-01-20
+v1.32 / 2020-01-21
 ------------------
-- Added: dukegdx.def (for DukeGDX compatibility)
+- Added: dukegdx.def (for DukeGDX compatibility; widescreen.def not loaded since it is not needed)
+- Updated: 2943, 2962 ("D" and "W" chars were distorted in DukeGDX)
 
 v1.31 / 2020-01-07
 ------------------
