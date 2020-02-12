@@ -1,7 +1,7 @@
                                  ===================================
                                        FIXES FOR DUKE NUKEM 3D
                                  ===================================
-                                  Version: 1.32 / January 21, 2020
+                                  Version: 1.33 / February 12, 2020
 
 
 ================================================================================================
@@ -63,10 +63,7 @@ What you get:
   In Polymost rendering mode, parallax skies look pretty bad, showing large gray stripes 
   on the top. With these skyboxes which stay close to the look of the original graphics, 
   this problem should belong to the past.
-  Will also work with "Duke It Out in D.C." and "Duke Caribbean: Life's A Beach" [provided
-  you un-comment the appropriate lines in duke3d.def - just remove the "//" part of either
-  // skyboxes_dc.def (for "Duke D.C.") or
-  // skyboxes_vaca.def (for "Duke Caribbean").]
+  Will also work automatically with "Duke It Out in D.C." and "Duke Caribbean: Life's A Beach".
 
 > 8-bit redfont from Duke3D v1.3D
   With the Atomic Edition, 3D Realms switched to a new menu font that was much thicker
@@ -146,6 +143,10 @@ C R E D I T S
 ================================================================================================
 C H A N G E L O G
 ================================================================================================
+
+v1.33 / 2020-02-12
+------------------
+- Updated: DukeDC and Vacation skyboxes now load automatically (DukeGDX only)
 
 v1.32 / 2020-01-21
 ------------------
