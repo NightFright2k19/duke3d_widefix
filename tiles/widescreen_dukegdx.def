@@ -1,0 +1,2 @@
+// Triple Poison Shooter
+tilefromtexture 2536 { file "tiles/widescreen/2536_vaca.png" xoff -10 yoff 1 ifcrc 0x9244D76E }
