@@ -1,4 +1,4 @@
-echo "Duke3D Fixes v1.34"
+echo "Duke3D Fixes v1.35"
 
 include tiles/redfont13.def
 include tiles/widescreen.def
