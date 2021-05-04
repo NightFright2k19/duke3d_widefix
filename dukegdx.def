@@ -1,6 +1,4 @@
-echo "Duke3D Fixes v1.35"
-
-include tiles/redfont13.def
+echo "Duke3D Fixes v1.36"
 
 include tiles/skyboxes.def
 includeif dukedc.grp tiles/skyboxes_dc.def
