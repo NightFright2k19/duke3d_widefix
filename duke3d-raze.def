@@ -1,0 +1,4 @@
+echo "Duke3D Fixes v1.4"
+
+include scripts/widescreen-raze.def
+

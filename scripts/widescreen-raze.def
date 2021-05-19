@@ -1,0 +1,68 @@
+// Knuckle crack (by Jimmy)
+tilefromtexture 2325 { file "tiles/widescreen/2325.png" xoff 24 ifcrc 0xC28B6D5C }
+tilefromtexture 2326 { file "tiles/widescreen/2326.png" xoff 16 ifcrc 0xABA45CC7 }
+
+// (Water) Pistol (by Jimmy)
+tilefromtexture 2528 { file "tiles/widescreen/2528.png" xoff -28 yoff 2 ifcrc 0x151510BC }
+tilefromtexture 2528 { file "tiles/widescreen/2528_vaca.png" xoff -28 yoff 2 ifcrc 0x8B96E57E }
+tilefromtexture 2529 { file "tiles/widescreen/2529.png" xoff -70 yoff 8 ifcrc 0xD5763142 }
+tilefromtexture 2529 { file "tiles/widescreen/2529_vaca.png" xoff -70 yoff 8 ifcrc 0x24BEB77F }
+
+// Triple Poison Shooter (by Jimmy)
+tilefromtexture 2536 { file "tiles/widescreen/2536_vaca.png" xoff -10 yoff 1 ifcrc 0x9244D76E }
+
+// RPG/Coconut Launcher (by Jimmy)
+tilefromtexture 2544 { file "tiles/widescreen/2544.png" xoff -115 yoff -67 ifcrc 0xF82E6BA }
+tilefromtexture 2544 { file "tiles/widescreen/2544_vaca.png" xoff -98 yoff -67 ifcrc 0xA2B6EFF2 }
+
+// Freezer/Ice Maker (by Jimmy)
+tilefromtexture 2548 { file "tiles/widescreen/2548.png" xoff -60 yoff 15 ifcrc 0xCBB9E174 }
+tilefromtexture 2548 { file "tiles/widescreen/2548_vaca.png" xoff -62 yoff 15 ifcrc 0x935FACC5 }
+tilefromtexture 2550 { file "tiles/widescreen/2550.png" xoff -13 yoff 25 ifcrc 0x713334E1 }
+tilefromtexture 2550 { file "tiles/widescreen/2550_vaca.png" xoff 1 yoff 25 ifcrc 0x69658055 }
+
+// Expander (by Jimmy)
+tilefromtexture 2554 { file "tiles/widescreen/2554.png" xoff -4 ifcrc 0x4518282 }
+tilefromtexture 2555 { file "tiles/widescreen/2555.png" xoff -4 ifcrc 0x63E337F0 }
+
+// Shrinker (by Jimmy)
+tilefromtexture 2556 { file "tiles/widescreen/2556.png" xoff -1 yoff -2 ifcrc 0xC060EA4B }
+tilefromtexture 2557 { file "tiles/widescreen/2557.png" xoff -1 yoff -2 ifcrc 0xBAC3A8C4 }
+
+// Super Soak'em (by Jimmy)
+tilefromtexture 2613 { file "tiles/widescreen/2613_vaca.png" xoff -76 yoff -45 ifcrc 0x1EE60731 }
+tilefromtexture 2616 { file "tiles/widescreen/2616_vaca.png" xoff -56 yoff -40 ifcrc 0x1D10B0C1 }
+
+// Statusbar (by Fox)
+tilefromtexture 2462 { file "tiles/widescreen/2462.png" xoff 0 yoff 14 ifcrc 0x7830BF5 }
+
+// 3DR Logo (by NightFright)
+tilefromtexture 2492 { file "tiles/widescreen/2492-raze.png" ifcrc 0xD153CF9A }
+
+// Titlepic (by Kinsie/NightFright)
+tilefromtexture 2493 { file "tiles/widescreen/2493-raze.png" ifcrc 0xA86A363C }
+tilefromtexture 2493 { file "tiles/widescreen/2493_dc-raze.png" ifcrc 0xBE30B5D0 }
+
+// Menu tiles (by NightFright)
+tilefromtexture 2445 { file "tiles/widescreen/2445.png" ifcrc 0x1FCDE570 }
+tilefromtexture 2456 { file "tiles/widescreen/2456.png" ifcrc 0xBBB7BFF1 }
+tilefromtexture 2500 { file "tiles/widescreen/2500.png" ifcrc 0x404CA3FE }
+tilefromtexture 2500 { file "tiles/widescreen/2500_vaca.png" ifcrc 0x16B5E8CA }
+tilefromtexture 2504 { file "tiles/widescreen/2504.png" ifcrc 0x5ADB1878 }
+tilefromtexture 2504 { file "tiles/widescreen/2504_nw.png" ifcrc 0x15D74472 }
+tilefromtexture 2505 { file "tiles/widescreen/2505.png" ifcrc 0x304ACBEB }
+tilefromtexture 2506 { file "tiles/widescreen/2506.png" ifcrc 0xB4D28C6D }
+tilefromtexture 3280 { file "tiles/widescreen/3280.png" ifcrc 0xF54249C6 }
+tilefromtexture 3292 { file "tiles/widescreen/3292.png" ifcrc 0x1266A550 }
+tilefromtexture 3293 { file "tiles/widescreen/3293.png" ifcrc 0xBA778F3D }
+tilefromtexture 3293 { file "tiles/widescreen/3293_nw.png" ifcrc 0xACFF3DC9 }
+
+// Level ending screens (by fgsfds/NightFright)
+tilefromtexture 3240 { file "tiles/widescreen/3240.png" ifcrc 0xFFD37DAC }
+tilefromtexture 3240 { file "tiles/widescreen/3240_vaca.png" ifcrc 0x1EEE38D3 }
+tilefromtexture 3245 { file "tiles/widescreen/3245.png" ifcrc 0xD4F86726 }
+tilefromtexture 3245 { file "tiles/widescreen/3240_vaca.png" ifcrc 0x1EEE38D3 }
+
+// Loading screen (by NightFright)
+tilefromtexture 3281 { file "tiles/widescreen/3281.png" ifcrc 0x5382BE0F }
+tilefromtexture 3281 { file "tiles/widescreen/3281_vaca.png" ifcrc 0xDEC1C700 }

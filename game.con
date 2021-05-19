@@ -1525,6 +1525,10 @@ actor JETPACK
   }
 enda
 
+definequote 190 BLUE ACCESS CARD
+definequote 191 RED ACCESS CARD
+definequote 192 YELLOW ACCESS CARD
+
 actor ACCESSCARD
   fall
   ifmove RESPAWN_ACTOR_FLAG
@@ -1538,7 +1542,14 @@ actor ACCESSCARD
   { ifpinventory GET_ACCESS 0
       break
     addinventory GET_ACCESS 1
-    quote 43
+    ifspritepal 0
+	quote 190
+    else ifspritepal 21
+	quote 191
+    else ifspritepal 23
+	quote 192
+    else
+	quote 43
     state getcode
   }
 enda

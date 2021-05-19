@@ -1,7 +1,7 @@
                                  ===================================
                                        FIXES FOR DUKE NUKEM 3D
                                  ===================================
-                                     Version: 1.36 / May 4, 2021
+                                     Version: 1.4 / May 19, 2021
 
 
 ================================================================================================
@@ -13,7 +13,7 @@ visually "complete" for EDuke32 users.
 
 What you get:
 -------------
-> Fixed game.con
+> Fixed game.con (EDuke32 only)
   Darkus released an edited game.con file on Oct 3, 2016 which applies many improvements
   and adjustments to the game, such as:
      + Kill counter fix: Should now work as intended, works differently in 'Damn I'm Good', 
@@ -72,12 +72,13 @@ What you get:
   (made by SwissCM) and integrated it into .art files with some palette fixes (so the
   characters would also look OK in custom content).
 
-> Widescreen statusbar and weapons (EDuke32 only)
+> Widescreen graphics (statusbar, weapons, menu)
   Fox made a really nice widescreen statusbar for the game. I improved a few pixels here
   and there and increased its width a bit to cover higher screen resolutions.
-  Widescreen-compatible weapons for Duke Nukem 3D (Pistol, Shrinker, Expander) and
-  Life's A Beach (Water Pistol, Super Soak'em, Triple Poison Shooter) made by Jimmy are also
-  included, only loaded when the same tiles are not replaced by custom mods. 
+  Widescreen-compatible weapons for Duke Nukem 3D and Life's A Beach made by Jimmy are also
+  included, only loaded when the same tiles are not replaced by custom mods.
+  Finally, the most important menu tiles have been provided as widescreen versions, covering
+  original Duke3D and all addons. 
 
 
 ================================================================================================
@@ -110,7 +111,11 @@ N O T E S
 
 2) There seem to be issues with Darkus' GAME.CON fix and certain user maps such as 
    underTaker's "Blink of an Eye" (maps ends right after being loaded). If you can't wait
-   for a fix, rename game.con in this pack to restore the original version.  
+   for a fix, rename game.con in this pack to restore the original version.
+
+3) In order to use this with Raze, Rednukem or DukeGDX, please delete "game.con" from 
+   this archive first since it contains EDuke32-specific code which is not supported 
+   by those ports.
 
 
 ================================================================================================
@@ -129,8 +134,16 @@ C R E D I T S
 > CLASSIC SKYBOXES + WIDESCREEN STATUSBAR
   Fox
 
+> WIDESCREEN MENU TILES
+  fgsfds
+  Kinsie
+  NightFright
+
 > WIDESCREEN WEAPONS
   Jimmy
+
+> PALETTE CONVERSION FOR 3DR LOGO (#2492)/DUKE3D TITLE (#2493)
+  Phredreeke
 
 > ORIGINAL GAME ART
   (C) 3D Realms, 1996
@@ -145,6 +158,15 @@ C R E D I T S
 C H A N G E L O G
 ================================================================================================
 
+v1.4 / 2021-05-19
+-----------------
+- Added: duke3d-raze.def (Raze support)
+- Added: Widescreen tiles for menu tiles 2445, 2456, 2492, 2493, 2500, 2504-2506, 3240, 
+         3245, 3280, 3281, 3292, 3293 (Duke3D + addons)
+- Added: Missing widescreen tiles for weapons (not needed in EDuke32, but elsewhere)
+- Updated: duke3d_fixes.def (can switch menufont color to blue/green/grey, EDuke32 only)
+- Updated: game.con (custom mod: picking up access cards now mentions their color)
+
 v1.36 / 2021-05-04
 ------------------
 - Redfont now comes in three .art files with some palette fixes
@@ -152,7 +174,7 @@ v1.36 / 2021-05-04
 v1.35 / 2020-05-25
 ------------------
 - Updated: dukegdx.def (fixed widescreen support)
-- Updated: Game.con fixes (by Darkus, version from April 10, 2020)
+- Updated: game.con fixes (by Darkus, version from April 10, 2020)
 
 v1.34 / 2020-02-13
 ------------------
@@ -170,7 +192,7 @@ v1.32 / 2020-01-21
 
 v1.31 / 2020-01-07
 ------------------
-- Updated: Game.con fixes (by Darkus)
+- Updated: game.con fixes (by Darkus)
 
 v1.3 / 2019-09-23
 -----------------
@@ -180,21 +202,21 @@ v1.22 / 2019-09-03
 ------------------
 - Removed: Skyboxes (no longer needed with EDuke32 r8075 or later due to Polymost rendering fix)
 - Removed: grabbag.mid
-- Updated: Game.con fixes from Apr 7, 2019 (by Darkus)
+- Updated: game.con fixes from Apr 7, 2019 (by Darkus)
 
 v1.21 / 2016-11-04
 ------------------
-- Updated: Game.con fixes (by Darkus)
+- Updated: game.con fixes (by Darkus)
 
 v1.2 / 2016-10-04
 -----------------
-- Added: Game.con fixes (by Darkus)
+- Added: game.con fixes (by Darkus)
 - Added: Classic skyboxes (by Fox)
 
 v1.1 / 2015-09-16
 -----------------
 - Removed: Fox's CON fixes (addon is more mod-friendly this way)
-- Updated: Statusbar graphics (more seams removed)
+- Updated: Statusbar (more seams removed)
 
 v1.0 / 2015-08-14
 -----------------

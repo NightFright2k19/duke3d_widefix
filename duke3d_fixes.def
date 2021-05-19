@@ -1,3 +1,8 @@
-echo "Duke3D Fixes v1.36"
+echo "Duke3D Fixes v1.4"
 
-include tiles/widescreen.def
+include scripts/widescreen.def
+
+// Optional recolors for menufont
+// include scripts/menufont_blue.def
+// include scripts/menufont_green.def
+// include scripts/menufont_grey.def

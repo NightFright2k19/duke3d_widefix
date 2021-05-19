@@ -1,5 +1,6 @@
-echo "Duke3D Fixes v1.36"
+echo "Duke3D Fixes v1.4"
 
-include tiles/skyboxes.def
-includeif dukedc.grp tiles/skyboxes_dc.def
-includeif vacation.grp tiles/skyboxes_vaca.def
+include scripts/widescreen.def
+include scripts/skyboxes.def
+includeif dukedc.grp scripts/skyboxes_dc.def
+includeif vacation.grp scripts/skyboxes_vaca.def
