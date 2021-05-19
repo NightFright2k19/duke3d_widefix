@@ -1,5 +1,7 @@
 echo "Duke3D Fixes v1.4"
 
+globalgameflags 1
+
 include scripts/widescreen.def
 
 // Optional recolors for menufont
