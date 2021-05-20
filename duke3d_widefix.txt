@@ -1,0 +1,172 @@
+                                =======================================
+                                  WIDESCREEN FIXES FOR DUKE NUKEM 3D
+                                =======================================
+                                     Version: 1.41 / May 25, 2021
+
+
+================================================================================================
+A B O U T
+================================================================================================
+
+This file provides widescreen graphics to make Duke Nukem 3D look a bit more polished and 
+visually "complete" for EDuke32 users.
+
+What you get:
+-------------
+> Widescreen graphics (statusbar, weapons, menu)
+  Fox made a really nice widescreen statusbar for the game. I improved a few pixels here
+  and there and increased its width a bit to cover higher screen resolutions.
+  Widescreen-compatible weapons for Duke Nukem 3D and Life's A Beach made by Jimmy are also
+  included, only loaded when the same tiles are not replaced by custom mods.
+  Finally, the most important menu tiles have been provided as widescreen versions, covering
+  original Duke3D and all addons.
+
+> 8-bit redfont from Duke3D v1.3D
+  With the Atomic Edition, 3D Realms switched to a new menu font that was much thicker
+  than the one that came with the initial release of the game. Many liked the previous
+  font better, so here it is. I took the 8-bit version of the redfont from the HRP 
+  (made by SwissCM) and integrated it into .art files with some palette fixes (so the
+  characters would also look OK in custom content).
+
+> Classic skyboxes (DukeGDX only)
+  In Polymost rendering mode, parallax skies look pretty bad, showing large gray stripes 
+  on the top. With these skyboxes which stay close to the look of the original graphics, 
+  this problem should belong to the past.
+  Will also work automatically with "Duke It Out in D.C." and "Duke Caribbean: Life's A Beach".
+
+
+================================================================================================
+R E Q U I R E M E N T S
+================================================================================================
+
+- Duke Nukem 3D groupfile (preferrably v1.5 Atomic Edition)
+ 
+- EDuke32 (use a recent snapshot from: http://dukeworld.duke4.net/eduke32 )
+
+
+================================================================================================
+I N S T A L L A T I O N
+================================================================================================
+
+1) Extract "duke3d_widefix.zip" into your EDuke32 autoload dir.
+
+2) Make sure "Enable 'autoload' folder" option is checked in EDuke32 launcher. 
+
+3) Launch EDuke32.
+
+
+================================================================================================
+N O T E S
+================================================================================================
+
+This patch is meant for users who prefer to play without the Highres Pack (HRP).
+Using the HRP and this at the same time is redundant as you would have highres replacements 
+for statusbar and menu font which make the graphics provided with this file useless.
+
+
+================================================================================================
+C R E D I T S
+================================================================================================
+
+> RELEASE
+  NightFright (nightfright2k7[at]gmail.com)
+
+> 8-BIT REDFONT FROM DUKE NUKEM 3D v1.3D
+  SwissCM
+
+> CLASSIC SKYBOXES + WIDESCREEN STATUSBAR
+  Fox
+
+> WIDESCREEN MENU TILES
+  fgsfds
+  Kinsie
+  NightFright
+
+> WIDESCREEN WEAPONS
+  Jimmy
+
+> PALETTE CONVERSION FOR 3DR LOGO (#2492)/DUKE3D TITLE (#2493)
+  Phredreeke
+
+> ORIGINAL GAME ART
+  (C) 3D Realms, 1996
+
+> MORE GOODIES
+  Duke Nukem 3D HRP ................................ http://hrp.duke4.net
+  EDuke32 .......................................... http://www.eduke32.com
+  Duke4.net Forums ................................. http://forums.duke4.net
+
+
+================================================================================================
+C H A N G E L O G
+================================================================================================
+
+v1.41 / 2021-05-25
+------------------
+- General: Project renamed to "Widescreen Fixes for Duke3D" (plus filename changes)
+- Updated: duke3d_widefix.def (RPG/Freezer no longer pinned to edge of the screen)
+- Removed: game.con (avoids issues with other ports)
+
+v1.4 / 2021-05-19
+-----------------
+- Added: duke3d-raze.def (Raze support)
+- Added: Widescreen tiles for menu tiles 2445, 2456, 2492, 2493, 2500, 2504-2506, 3240, 
+         3245, 3280, 3281, 3292, 3293 (Duke3D + addons)
+- Added: Missing widescreen tiles for weapons (not needed in EDuke32, but elsewhere)
+- Updated: duke3d_fixes.def (can switch menufont color to blue/green/grey, EDuke32 only)
+- Updated: game.con (custom mod: picking up access cards now mentions their color)
+
+v1.36 / 2021-05-04
+------------------
+- Redfont now comes in three .art files with some palette fixes
+
+v1.35 / 2020-05-25
+------------------
+- Updated: dukegdx.def (fixed widescreen support)
+- Updated: game.con fixes (by Darkus, version from April 10, 2020)
+
+v1.34 / 2020-02-13
+------------------
+- Updated: Added widescreen definition of #2536 (Triple Poison Shooter) for DukeGDX
+
+v1.33 / 2020-02-12
+------------------
+- Updated: DukeDC and Vacation skyboxes now load automatically (DukeGDX only)
+
+v1.32 / 2020-01-21
+------------------
+- Added: dukegdx.def (for DukeGDX compatibility; widescreen.def not loaded since it is not needed)
+- Added: Skyboxes from v1.21 for Duke3D, DukeDC and Vacation (DukeGDX only)
+- Updated: 2943, 2962 ("D" and "W" chars were distorted in DukeGDX)
+
+v1.31 / 2020-01-07
+------------------
+- Updated: game.con fixes (by Darkus)
+
+v1.3 / 2019-09-23
+-----------------
+- Added: Widescreen weapons for Duke Nukem 3D and Life's A Beach (by Jimmy)
+
+v1.22 / 2019-09-03
+------------------
+- Removed: Skyboxes (no longer needed with EDuke32 r8075 or later due to Polymost rendering fix)
+- Removed: grabbag.mid
+- Updated: game.con fixes from Apr 7, 2019 (by Darkus)
+
+v1.21 / 2016-11-04
+------------------
+- Updated: game.con fixes (by Darkus)
+
+v1.2 / 2016-10-04
+-----------------
+- Added: game.con fixes (by Darkus)
+- Added: Classic skyboxes (by Fox)
+
+v1.1 / 2015-09-16
+-----------------
+- Removed: Fox's CON fixes (addon is more mod-friendly this way)
+- Updated: Statusbar (more seams removed)
+
+v1.0 / 2015-08-14
+-----------------
+- Initial release
