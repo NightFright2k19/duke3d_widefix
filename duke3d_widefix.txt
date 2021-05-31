@@ -1,7 +1,7 @@
                                 =======================================
                                   WIDESCREEN FIXES FOR DUKE NUKEM 3D
                                 =======================================
-                                     Version: 1.41 / May 25, 2021
+                                     Version: 1.41 / May 31, 2021
 
 
 ================================================================================================
@@ -101,7 +101,7 @@ C R E D I T S
 C H A N G E L O G
 ================================================================================================
 
-v1.41 / 2021-05-25
+v1.41 / 2021-05-31
 ------------------
 - General: Project renamed to "Widescreen Fixes for Duke3D" (plus filename changes)
 - Updated: duke3d_widefix.def (RPG/Freezer no longer pinned to edge of the screen)
