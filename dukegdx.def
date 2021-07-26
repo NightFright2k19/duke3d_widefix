@@ -1,4 +1,4 @@
-echo "Duke3D Widescreen Fixes v1.41"
+echo "Duke3D Widescreen Fixes v1.42"
 
 include scripts/widescreen.def
 include scripts/skyboxes.def

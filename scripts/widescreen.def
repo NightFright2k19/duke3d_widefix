@@ -2,6 +2,9 @@
 tilefromtexture 2325 { file "tiles/widescreen/2325.png" xoff 24 ifcrc 0xC28B6D5C }
 tilefromtexture 2326 { file "tiles/widescreen/2326.png" xoff 16 ifcrc 0xABA45CC7 }
 
+// Fixed Skycar from World Tour
+tilefromtexture 2491 { file "tiles/fixes/2491.png" xoff 0 yoff -10 ifcrc 0x4C7B8630 }
+
 // (Water) Pistol (by Jimmy)
 tilefromtexture 2528 { file "tiles/widescreen/2528.png" xoff -28 yoff 2 ifcrc 0x151510BC }
 tilefromtexture 2528 { file "tiles/widescreen/2528_vaca.png" xoff -28 yoff 2 ifcrc 0x8B96E57E }
@@ -48,10 +51,12 @@ tilefromtexture 2445 { file "tiles/widescreen/2445.png" ifcrc 0x1FCDE570 }
 tilefromtexture 2456 { file "tiles/widescreen/2456.png" ifcrc 0xBBB7BFF1 }
 tilefromtexture 2500 { file "tiles/widescreen/2500.png" ifcrc 0x404CA3FE }
 tilefromtexture 2500 { file "tiles/widescreen/2500_vaca.png" ifcrc 0x16B5E8CA }
+tilefromtexture 2500 { file "tiles/widescreen/2500_wt.png" ifcrc 0x5681D921 }
 tilefromtexture 2504 { file "tiles/widescreen/2504.png" ifcrc 0x5ADB1878 }
 tilefromtexture 2504 { file "tiles/widescreen/2504_nw.png" ifcrc 0x15D74472 }
 tilefromtexture 2505 { file "tiles/widescreen/2505.png" ifcrc 0x304ACBEB }
 tilefromtexture 2506 { file "tiles/widescreen/2506.png" ifcrc 0xB4D28C6D }
+tilefromtexture 2506 { file "tiles/widescreen/2506_wt.png" ifcrc 0xE37D77BB }
 tilefromtexture 3280 { file "tiles/widescreen/3280.png" ifcrc 0xF54249C6 }
 tilefromtexture 3292 { file "tiles/widescreen/3292.png" ifcrc 0x1266A550 }
 tilefromtexture 3293 { file "tiles/widescreen/3293.png" ifcrc 0xBA778F3D }
