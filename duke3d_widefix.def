@@ -1,4 +1,4 @@
-echo "Duke3D Widescreen Fixes v1.42"
+echo "Duke3D Widescreen Fixes v1.43"
 
 globalgameflags 1
 

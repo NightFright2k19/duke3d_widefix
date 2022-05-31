@@ -3,7 +3,7 @@ tilefromtexture 2325 { file "tiles/widescreen/2325.png" xoff 24 ifcrc 0xC28B6D5C
 tilefromtexture 2326 { file "tiles/widescreen/2326.png" xoff 16 ifcrc 0xABA45CC7 }
 
 // Fixed Skycar from World Tour
-tilefromtexture 2491 { file "tiles/fixes/2491.png" xoff 0 yoff -10 ifcrc 0x4C7B8630 }
+tilefromtexture 2491 { file "tiles/fixes/2491_wt.png" xoff 0 yoff -10 ifcrc 0x4C7B8630 }
 
 // (Water) Pistol (by Jimmy)
 tilefromtexture 2528 { file "tiles/widescreen/2528.png" xoff -28 yoff 2 ifcrc 0x151510BC }
