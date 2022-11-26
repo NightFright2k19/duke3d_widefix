@@ -66,6 +66,7 @@ tilefromtexture 3293 { file "tiles/widescreen/3293_nw.png" ifcrc 0xACFF3DC9 }
 tilefromtexture 3240 { file "tiles/widescreen/3240.png" ifcrc 0xFFD37DAC }
 tilefromtexture 3240 { file "tiles/widescreen/3240_vaca.png" ifcrc 0x1EEE38D3 }
 tilefromtexture 3245 { file "tiles/widescreen/3245.png" ifcrc 0xD4F86726 }
+tilefromtexture 3245 { file "tiles/widescreen/3245_nw.png" ifcrc 0x6CC340CC }
 tilefromtexture 3245 { file "tiles/widescreen/3240_vaca.png" ifcrc 0x1EEE38D3 }
 
 // Loading screen (by NightFright)
