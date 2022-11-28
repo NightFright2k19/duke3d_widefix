@@ -103,11 +103,12 @@ C H A N G E L O G
 
 v1.46 / 2022-11-28
 ------------------
-- Updated: Widescreen Nuclear Winter level ending screen (3245)
+- Updated: Nuclear Winter level ending screen (3245)
+- Updated: Nuclear Winter episode ending screen (3293) without image stretching
 
 v1.45 / 2022-11-26
 ------------------
-- Added: Widescreen Nuclear Winter level ending screen (3245)
+- Added: Nuclear Winter level ending screen (3245)
 
 v1.44 / 2022-11-25
 ------------------
@@ -119,7 +120,7 @@ v1.43 / 2022-05-31
 
 v1.42 / 2021-07-26
 ------------------
-- Added: Widescreen menu tiles 2500+2506 for World Tour
+- Added: Menu tiles 2500+2506 for World Tour
 - Added: Fixed Skycar (2491) from World Tour for Atomic
 
 v1.41 / 2021-05-31
@@ -131,8 +132,8 @@ v1.41 / 2021-05-31
 v1.4 / 2021-05-19
 -----------------
 - Added: duke3d-raze.def (Raze support)
-- Added: Widescreen tiles for menu tiles 2445, 2456, 2492, 2493, 2500, 2504-2506, 3240, 
-         3245, 3280, 3281, 3292, 3293 (Duke3D + addons)
+- Added: Menu tiles 2445, 2456, 2492, 2493, 2500, 2504-2506, 3240, 3245, 3280, 3281, 
+         3292, 3293 (Duke3D + addons)
 - Added: Missing widescreen tiles for weapons (not needed in EDuke32, but elsewhere)
 - Updated: duke3d_fixes.def (can switch menufont color to blue/green/grey, EDuke32 only)
 - Updated: game.con (custom mod: picking up access cards now mentions their color)
