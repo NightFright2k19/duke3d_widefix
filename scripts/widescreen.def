@@ -24,6 +24,11 @@ tilefromtexture 2548 { file "tiles/widescreen/2548_vaca.png" xoff -62 yoff 15 if
 tilefromtexture 2550 { file "tiles/widescreen/2550.png" xoff -13 yoff 25 ifcrc 0x713334E1 }
 tilefromtexture 2550 { file "tiles/widescreen/2550_vaca.png" xoff 1 yoff 25 ifcrc 0x69658055 }
 
+// Freezer alignment fix (by NightFright)
+tilefromtexture 2551 { xoff 32 yoff 31 ifcrc 0x7DF23221 }
+tilefromtexture 2552 { xoff 32 yoff 28 ifcrc 0x3EC42CBB }
+tilefromtexture 2553 { xoff 32 yoff 30 ifcrc 0xFBB75487 }
+
 // Expander (by Jimmy)
 tilefromtexture 2554 { file "tiles/widescreen/2554.png" xoff -4 ifcrc 0x4518282 }
 tilefromtexture 2555 { file "tiles/widescreen/2555.png" xoff -4 ifcrc 0x63E337F0 }

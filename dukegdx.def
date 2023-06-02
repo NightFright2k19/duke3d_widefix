@@ -1,6 +1,0 @@
-echo "Duke3D Widescreen Fixes v1.51"
-
-include scripts/widescreen.def
-include scripts/skyboxes.def
-includeif dukedc.grp scripts/skyboxes_dc.def
-includeif vacation.grp scripts/skyboxes_vaca.def

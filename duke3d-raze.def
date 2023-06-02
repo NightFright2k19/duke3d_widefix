@@ -1,4 +1,4 @@
-echo "Duke3D Widescreen Fixes v1.51"
+echo "Duke3D Widescreen Fixes v1.6"
 
 include scripts/widescreen-raze.def
 
