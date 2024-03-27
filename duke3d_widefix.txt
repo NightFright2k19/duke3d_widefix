@@ -1,7 +1,7 @@
                                 =======================================
                                   WIDESCREEN FIXES FOR DUKE NUKEM 3D
                                 =======================================
-                                     Version: 1.6 / Jun 2, 2023
+                                     Version: 1.6.1 / XX XX, 2024
 
 
 ================================================================================================
@@ -86,6 +86,9 @@ C R E D I T S
 > WIDESCREEN WEAPONS
   Jimmy
 
+> WIDESCREEN RPG & FREEZER
+  Hail To The King Edition
+
 > PALETTE CONVERSION FOR 3DR LOGO (#2492)/DUKE3D TITLE (#2493)
   Phredreeke
 
@@ -101,6 +104,11 @@ C R E D I T S
 ================================================================================================
 C H A N G E L O G
 ================================================================================================
+
+v1.6.1 / 2024-XX-XX
+-------------------
+- Updated: 2544 (RPG) and 2550 (Freezer) from HTTK Edition
+- Commented out definition for 3281 (loading screen) since many user maps utilize the 5:4 version
 
 v1.6 / 2023-06-02
 -----------------

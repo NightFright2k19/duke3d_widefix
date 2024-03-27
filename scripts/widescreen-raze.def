@@ -15,13 +15,15 @@ tilefromtexture 2529 { file "tiles/widescreen/2529_vaca.png" xoff -70 yoff 8 ifc
 tilefromtexture 2536 { file "tiles/widescreen/2536_vaca.png" xoff -10 yoff 1 ifcrc 0x9244D76E }
 
 // RPG/Coconut Launcher (by Jimmy)
-tilefromtexture 2544 { file "tiles/widescreen/2544.png" xoff -115 yoff -67 ifcrc 0xF82E6BA }
+// tilefromtexture 2544 { file "tiles/widescreen/2544.png" xoff -115 yoff -67 ifcrc 0xF82E6BA }
+tilefromtexture 2544 { file "tiles/widescreen/2544_httk.png" xoff -109 yoff -67 ifcrc 0xF82E6BA }
 tilefromtexture 2544 { file "tiles/widescreen/2544_vaca.png" xoff -98 yoff -67 ifcrc 0xA2B6EFF2 }
 
 // Freezer/Ice Maker (by Jimmy)
 tilefromtexture 2548 { file "tiles/widescreen/2548.png" xoff -60 yoff 15 ifcrc 0xCBB9E174 }
 tilefromtexture 2548 { file "tiles/widescreen/2548_vaca.png" xoff -62 yoff 15 ifcrc 0x935FACC5 }
-tilefromtexture 2550 { file "tiles/widescreen/2550.png" xoff -13 yoff 25 ifcrc 0x713334E1 }
+// tilefromtexture 2550 { file "tiles/widescreen/2550.png" xoff -13 yoff 25 ifcrc 0x713334E1 }
+tilefromtexture 2550 { file "tiles/widescreen/2550_httk.png" xoff -37 yoff 25 ifcrc 0x713334E1 }
 tilefromtexture 2550 { file "tiles/widescreen/2550_vaca.png" xoff 1 yoff 25 ifcrc 0x69658055 }
 
 // Freezer alignment fix (by NightFright)
@@ -75,5 +77,5 @@ tilefromtexture 3245 { file "tiles/widescreen/3245_nw.png" ifcrc 0x6CC340CC }
 tilefromtexture 3245 { file "tiles/widescreen/3240_vaca.png" ifcrc 0x1EEE38D3 }
 
 // Loading screen (by NightFright)
-tilefromtexture 3281 { file "tiles/widescreen/3281.png" ifcrc 0x5382BE0F }
+// tilefromtexture 3281 { file "tiles/widescreen/3281.png" ifcrc 0x5382BE0F }
 tilefromtexture 3281 { file "tiles/widescreen/3281_vaca.png" ifcrc 0xDEC1C700 }
