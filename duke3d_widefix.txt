@@ -1,7 +1,7 @@
                                 =======================================
                                   WIDESCREEN FIXES FOR DUKE NUKEM 3D
                                 =======================================
-                                     Version: 1.6.1 / XX XX, 2024
+                                       Version: 1.6 / XX XX, 2024
 
 
 ================================================================================================
@@ -105,24 +105,24 @@ C R E D I T S
 C H A N G E L O G
 ================================================================================================
 
-v1.6.1 / 2024-XX-XX
--------------------
-- Updated: 2544 (RPG) and 2550 (Freezer) from HTTK Edition
-- Commented out definition for 3281 (loading screen) since many user maps utilize the 5:4 version
-
-v1.6 / 2023-06-02
+v1.6 / 2024-03-27
 -----------------
-- DukeGDX support removed: 
-  While it would have been possible to get weapon sprites working by converting ifcrc values
-  from hex to decimals and removing the unsupported artquality parameter in the skybox defs,
-  DukeGDX apparently does not support proper centering of widescreen tiles for menu graphics.
-  This however eliminates the main difference between this mod and the widescreen graphics
-  that are provided with the DukeGDX port. Until measures are taken to provide proper 
-  port-sided support, DukeGDX support has to be removed, along with the skyboxes.
+- Updated: 2544 (RPG) and 2550 (Freezer) from HTTK Edition
 - Updated: Ep.2/3 ending panels (3292, 3293) reverted to original 4:3 ratio for text parts
            with minor adjustments/corrections
 - Updated: Closed 1px wide gap on Freezer firing frame (2550)
 - Fixed: Improper alignment of Freezer firing sprites (2551-2553)
+- Removed: DukeGDX support 
+           While it would have been possible to get weapon sprites working by converting
+           ifcrc values from hex to decimals and removing the unsupported artquality parameter
+           in the skybox defs, DukeGDX apparently does not support proper centering of 
+           widescreen tiles for menu graphics.
+           This however eliminates the main difference between this mod and the widescreen 
+           graphics that are provided with the DukeGDX port. Until measures are taken to 
+           provide proper port-sided support, DukeGDX support has to be removed, along with 
+           the skyboxes.
+- Removed: Definition for 3281 (loading screen) commented out since many user maps utilize 
+           the 5:4 version
 
 v1.5 / 2022-12-12
 -----------------
