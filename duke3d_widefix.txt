@@ -1,7 +1,7 @@
                                 =======================================
                                   WIDESCREEN FIXES FOR DUKE NUKEM 3D
                                 =======================================
-                                      Version: 1.6 / Mar 27, 2024
+                                      Version: 1.6 / Jul 11, 2025
 
 
 ================================================================================================
@@ -89,6 +89,9 @@ C R E D I T S
 > WIDESCREEN RPG & FREEZER
   Hail To The King Edition
 
+> WIDESCREEN 3DR LOGO (#2492)
+  Doorhenge
+
 > PALETTE CONVERSION FOR 3DR LOGO (#2492)/DUKE3D TITLE (#2493)
   Phredreeke
 
@@ -105,7 +108,7 @@ C R E D I T S
 C H A N G E L O G
 ================================================================================================
 
-v1.6 / 2024-03-27
+v1.6 / 2025-07-11
 -----------------
 - Updated: 2544 (RPG) and 2550 (Freezer) from HTTK Edition
 - Updated: Ep.2/3 ending panels (3292, 3293) reverted to original 4:3 ratio for text parts
@@ -126,7 +129,8 @@ v1.6 / 2024-03-27
 
 v1.5 / 2022-12-12
 -----------------
-- Updated: Image stretching removed for Atomic/WT (2500, 3292, 3293) and Vacation (3240, 3281)
+- Updated: Image stretching removed for Atomic/WT (2492, 2500, 3292, 3293)
+           and Vacation (3240, 3281)
 
 v1.47 / 2022-12-06
 ------------------
