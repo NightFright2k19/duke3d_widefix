@@ -1,7 +1,7 @@
                                 =======================================
                                   WIDESCREEN FIXES FOR DUKE NUKEM 3D
                                 =======================================
-                                      Version: 1.6 / Jul 11, 2025
+                                    Version: 1.7-dev / Jul 11, 2025
 
 
 ================================================================================================
@@ -108,13 +108,16 @@ C R E D I T S
 C H A N G E L O G
 ================================================================================================
 
-v1.6 / 2025-07-11
+v1.7-dev / 2025-07-11
+---------------------
+- Updated: Image stretching removed for 3DR logo (2492)
+
+v1.6 / 2024-03-27
 -----------------
 - Updated: 2544 (RPG) and 2550 (Freezer) from HTTK Edition
 - Updated: Ep.2/3 ending panels (3292, 3293) reverted to original 4:3 ratio for text parts
            with minor adjustments/corrections
 - Updated: Closed 1px wide gap on Freezer firing frame (2550)
-- Updated: Image stretching removed for 3DR logo (2492)
 - Fixed: Improper alignment of Freezer firing sprites (2551-2553)
 - Removed: DukeGDX support 
            While it would have been possible to get weapon sprites working by converting
