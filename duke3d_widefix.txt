@@ -114,6 +114,7 @@ v1.6 / 2025-07-11
 - Updated: Ep.2/3 ending panels (3292, 3293) reverted to original 4:3 ratio for text parts
            with minor adjustments/corrections
 - Updated: Closed 1px wide gap on Freezer firing frame (2550)
+- Updated: Image stretching removed for 3DR logo (2492)
 - Fixed: Improper alignment of Freezer firing sprites (2551-2553)
 - Removed: DukeGDX support 
            While it would have been possible to get weapon sprites working by converting
@@ -129,8 +130,7 @@ v1.6 / 2025-07-11
 
 v1.5 / 2022-12-12
 -----------------
-- Updated: Image stretching removed for Atomic/WT (2492, 2500, 3292, 3293)
-           and Vacation (3240, 3281)
+- Updated: Image stretching removed for Atomic/WT (2500, 3292, 3293) and Vacation (3240, 3281)
 
 v1.47 / 2022-12-06
 ------------------
