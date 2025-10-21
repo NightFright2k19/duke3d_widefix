@@ -17,7 +17,7 @@ tilefromtexture 2536 { file "tiles/widescreen/2536_vaca.png" xoff -10 yoff 1 ifc
 // RPG/Coconut Launcher (by Jimmy)
 // tilefromtexture 2544 { file "tiles/widescreen/2544.png" xoff -115 yoff -67 ifcrc 0xF82E6BA }
 tilefromtexture 2544 { file "tiles/widescreen/2544_httk.png" xoff -109 yoff -67 ifcrc 0xF82E6BA }
-tilefromtexture 2544 { file "tiles/widescreen/2544_vaca.png" xoff -98 yoff -67 ifcrc 0xA2B6EFF2 }
+tilefromtexture 2544 { file "tiles/widescreen/2544_vaca.png" xoff -116 yoff -67 ifcrc 0xA2B6EFF2 }
 
 // Freezer/Ice Maker (by Jimmy)
 tilefromtexture 2548 { file "tiles/widescreen/2548.png" xoff -60 yoff 15 ifcrc 0xCBB9E174 }

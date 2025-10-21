@@ -1,7 +1,7 @@
                                 =======================================
                                   WIDESCREEN FIXES FOR DUKE NUKEM 3D
                                 =======================================
-                                    Version: 1.7-dev / Jul 11, 2025
+                                    Version: 1.7-dev / Oct 21, 2025
 
 
 ================================================================================================
@@ -89,6 +89,9 @@ C R E D I T S
 > WIDESCREEN RPG & FREEZER
   Hail To The King Edition
 
+> IMPROVED COCONUT LAUNCHER
+  superdave938
+
 > WIDESCREEN 3DR LOGO (#2492)
   Doorhenge
 
@@ -108,8 +111,9 @@ C R E D I T S
 C H A N G E L O G
 ================================================================================================
 
-v1.7-dev / 2025-07-11
+v1.7-dev / 2025-10-25
 ---------------------
+- Updated: 2544 (Coconut Launcher) by superdave938
 - Updated: Image stretching removed for 3DR logo (2492)
 
 v1.6 / 2024-03-27
