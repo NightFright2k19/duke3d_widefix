@@ -1,5 +1,3 @@
-![duke3d_wide](https://github.com/user-attachments/assets/831095c6-1e74-409f-889f-ad4d0c85f342)
-
 # WIDESCREEN FIXES FOR DUKE NUKEM 3D
 
 This file provides widescreen graphics to make Duke Nukem 3D look a bit more polished and 
